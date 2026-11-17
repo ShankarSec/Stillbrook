@@ -1,0 +1,46 @@
+PROJECT CHARTER — BlackEcho Migration
+ID: SB-PRJ-2026-003
+Status: Active
+Sponsor: A. Kowalski
+Start: 2026-01-15
+Target Completion: 2026-09-30
+Classification: Internal
+
+═══════════════════════════════════════════════════
+SCOPE
+═══════════════════════════════════════════════════
+
+Migrate legacy monolith (Java 8) to
+microservices (Go, Kubernetes) across
+Engineering and QA environments.
+
+═══════════════════════════════════════════════════
+PROJECT IDENTIFIER
+═══════════════════════════════════════════════════
+
+Official name: BlackEcho Migration
+System identifier: BlackEcho_Migration
+Short code (internal chat only): BE-MIG
+  NOTE: Short code is NOT valid for
+  credential construction.
+
+═══════════════════════════════════════════════════
+TEAM
+═══════════════════════════════════════════════════
+
+  A. Kowalski   — Migration Lead (Sponsor)
+  D. Nguyen     — Senior Migration Engineer
+  S. Chen       — Senior Developer
+  P. Okafor     — CI/CD Pipeline Engineer
+  L. Tanaka     — Build & Release (from Q2)
+  K. Muller     — QA (contract)
+
+═══════════════════════════════════════════════════
+MILESTONES
+═══════════════════════════════════════════════════
+
+  M1: Staging migration complete    — 2026-03-31 ✓
+  M2: Production cutover            — 2026-06-30
+  M3: Legacy decommission           — 2026-09-30
+
+═══════════════════════════════════════════════════   

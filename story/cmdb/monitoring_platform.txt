@@ -1,0 +1,41 @@
+CMDB — Monitoring & Alerting Platform
+Classification: Admin
+Last Updated: 2026-03-12
+
+═══════════════════════════════════════════════════
+PLATFORM: PagerDuty + Grafana
+═══════════════════════════════════════════════════
+
+  sa_ops_monitor    — Primary monitoring agent
+                      Dashboards: 14
+                      Alerts: 47 active rules
+
+  sa_ops_failover   — Failover trigger service
+                      Auto-trigger: RTO > 5 min
+                      Manual trigger: N. Gupta only
+
+  t.muller (Ops)    — Dashboard owner
+                      Access: Read + Alert config
+                      NO failover trigger access
+
+═══════════════════════════════════════════════════
+ESCALATION CHAIN
+═══════════════════════════════════════════════════
+
+  Level 1: T. Muller (Monitoring)
+  Level 2: D. Nguyen (DR Coordinator)
+  Level 3: N. Gupta (Failover)
+  Level 4: A. Fischer (CISO)
+  Level 5: E. Whitfield (CTO)
+
+═══════════════════════════════════════════════════
+RECENT INCIDENTS
+═══════════════════════════════════════════════════
+
+  2026-03-05: RTO spike to 7 min (resolved, 12 min)
+  2026-02-19: False positive — finance export
+              delay triggered DR alert (no action)
+  2025-11-14: Full failover executed (RTO: 4 min)
+              Handled by: D. Nguyen, N. Gupta
+
+═══════════════════════════════════════════════════   

@@ -1,0 +1,20 @@
+From: s.lindqvist@stillbrook.internal
+To: j.castillo@stillbrook.internal
+Cc: c.lindgren@stillbrook.internal
+Subject: RE: Orion Budget Q2 Allocation
+Date: 2026-03-20
+
+Juan,
+
+Approved. Q2 allocation is $2.4M. The
+OrionBudget system identifier is confirmed
+for all integrations — no underscore.
+I've told IT Security to update the charter
+if it's not already correct.
+
+Carlos — the export pipeline needs to be
+live before the Q2 lock on May 15. Can
+you confirm the sa_finance_export token
+rotation won't interfere?
+
+— Sofia   

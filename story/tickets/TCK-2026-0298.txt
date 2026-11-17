@@ -1,0 +1,13 @@
+Ticket: TCK-2026-0298
+Priority: Medium
+Status: Resolved
+Opened: 2026-02-12
+By: intern01@stillbrook.internal
+Assigned: m.rivera
+
+Subject: Confluence access — SpringOnboarding
+
+Description: Need access to
+SpringOnboarding Confluence space.
+Resolution: Granted. User confirmed
+access.   

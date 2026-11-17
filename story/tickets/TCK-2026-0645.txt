@@ -1,0 +1,16 @@
+Ticket: TCK-2026-0645
+Priority: Low
+Status: Resolved
+Opened: 2026-03-28
+By: intern01@stillbrook.internal
+Assigned: p.okafor
+
+Subject: Question about account department
+
+Description: Is my account "General" or
+"SpringOnboarding"? My email says
+General but I'm doing onboarding work.
+Resolution: Department is General.
+Project is SpringOnboarding. They are
+different things. Credential follows
+General format.   

@@ -1,0 +1,11 @@
+Ticket: TCK-2026-0101
+Priority: Low
+Status: Resolved
+Opened: 2026-01-08
+By: helpdesk01@stillbrook.internal
+Assigned: helpdesk02
+
+Subject: Printer jam — Floor 2 (printer01)
+
+Description: Paper jam in tray 3.
+Resolution: Cleared. No further action.   

@@ -1,0 +1,15 @@
+Ticket: TCK-2026-0548
+Priority: Medium
+Status: Resolved
+Opened: 2026-03-18
+By: j.castillo@stillbrook.internal
+Assigned: IT Admin
+
+Subject: Service account provisioning —
+sa_finance_export (new endpoint)
+
+Description: Provisioning sa_finance_export
+for new S3 export endpoint. Project:
+OrionBudget. Owner: C. Lindgren.
+Resolution: Provisioned. Token issued.
+90-day rotation scheduled.   

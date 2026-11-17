@@ -1,0 +1,4 @@
+Host router
+  HostName internal-router
+  Port 2223
+  User svc_router

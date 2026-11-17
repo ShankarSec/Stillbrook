@@ -1,0 +1,27 @@
+Ticket: HD-6117
+Subject: Migration dashboard access denied after credential update
+Department: Engineering
+Priority: Medium
+Status: Resolved
+
+[User - Day 1, 10:20]
+I updated my password per the policy but the migration
+dashboard keeps rejecting it. I used my old BlackEcho
+dev password and it didn't work either.
+
+[Agent - Day 1, 13:45]
+Hi m.rivera, the migration dashboard uses project-scoped
+credentials, not your legacy dev password.
+
+The format for Engineering-scoped accounts follows the
+standard convention in Password Policy (v4.2.1). Note:
+Engineering uses "!" as the delimiter.
+
+Also — the project name in the password should match the
+full initiative name, not the short code.
+
+[User - Day 1, 16:00]
+Ah, that makes sense. Updated with the full project name.
+Working now.
+
+[Status] Resolved   

@@ -1,0 +1,54 @@
+PROJECT CHARTER — Phoenix Disaster Recovery
+ID: SB-PRJ-2025-011
+Status: Active (ongoing, quarterly review)
+Sponsor: D. Nguyen (Operations)
+Start: 2025-06-01
+Review Cycle: Quarterly
+Classification: Internal
+
+═══════════════════════════════════════════════════
+SCOPE
+═══════════════════════════════════════════════════
+
+Enterprise DR infrastructure, automated
+failover, backup systems, and monitoring.
+
+═══════════════════════════════════════════════════
+PROJECT IDENTIFIER
+═══════════════════════════════════════════════════
+
+Official name: Phoenix Disaster Recovery
+System identifier: Phoenix_DR
+Short code (internal chat only): PHX-DR
+  NOTE: Short code is NOT valid for
+  credential construction.
+
+═══════════════════════════════════════════════════
+TEAM
+═══════════════════════════════════════════════════
+
+  D. Nguyen     — DR Coordinator (Sponsor, Ops)
+  M. Rivera     — DR Operations Support
+  N. Gupta      — Failover Specialist
+  T. Muller     — Monitoring & Alerting
+  D. Nguyen     — Privileged Access (IT Admin)
+  M. Rivera     — Infrastructure Backup (IT Admin)
+  J. Castillo   — Access Management (IT Admin)
+
+═══════════════════════════════════════════════════
+SHARED ACCOUNT
+═══════════════════════════════════════════════════
+
+  backupadmin: Shared between IT Admin and the
+  Operations lead (D. Nguyen). Credentials are
+  identical per policy §4. Q4 2026 review pending.
+
+═══════════════════════════════════════════════════
+MILESTONES
+═══════════════════════════════════════════════════
+
+  Q1 2026: Failover RTO < 5 min      — ✓ (4 min)
+  Q2 2026: Automated backup rotation  — In progress
+  Q3 2026: DR audit trail integration — Planned
+
+═══════════════════════════════════════════════════   

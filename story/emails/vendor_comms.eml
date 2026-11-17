@@ -1,0 +1,22 @@
+From: procurement@stillbrook.internal
+To: t.muller@stillbrook.internal
+Subject: Vendor Contract Renewal — PagerDuty
+Date: 2026-03-25
+
+Tom,
+
+The PagerDuty contract renews April 30.
+Current spend: $14,200/yr.
+
+Please confirm:
+  1. Is the monitoring dashboard still
+     under Phoenix_DR budget?
+  2. Do we need the enterprise tier for
+     the new failover alerting?
+  3. Who is the technical contact on
+     our side?
+
+Budget code: ORN-BUD-OPS (shared between
+Orion Budget and Operations).
+
+— Procurement   

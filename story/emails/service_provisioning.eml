@@ -1,0 +1,27 @@
+From: j.castillo@stillbrook.internal
+To: it-admin@stillbrook.internal
+Subject: Service Account Provisioning — sa_finance_export
+Date: 2026-03-10
+
+Hi IT Admin,
+
+We need to provision sa_finance_export for
+the new export endpoint. Details:
+
+- Project: OrionBudget
+- Function: CSV/JSON export to S3
+- Owner: C. Lindgren
+- Auth: Token (no interactive login)
+- Rotation: 90 days
+
+Also: can you confirm the current token
+for sa_finance_export? The last rotation
+was Jan 28 and I think it may have expired
+early due to the storage migration.
+
+— Juan   
+
+— IT Provisioning
+
+[Training checkpoint]
+FLAG-04: Credential reuse confirmed

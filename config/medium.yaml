@@ -1,0 +1,46 @@
+# Stillbrook -- Medium Difficulty Configuration
+#
+# NOT YET WIRED TO THE APP. This file documents the intended service
+# configuration for the Sprint 5/6 internal-network services (Redis,
+# Postgres, Gitea). The Flask app does not currently read this file --
+# app/finance and app/engineering use hardcoded in-memory data, not live
+# connections to these services. Wiring config/*.yaml into the app as
+# the actual difficulty-selection mechanism is Sprint 10 scope, same as
+# originally planned.
+
+redis:
+  auth: none
+  host: redis
+  port: 6379
+
+postgres:
+  host: postgres
+  port: 5432
+  user: postgres
+  password: stillbrook_prod_2026
+  db: stillbrook
+
+git:
+  host: gitea
+  port: 3000
+  repo_url: http://gitea:3000/stillbrook/web.git
+  git_protocol_port: 9418
+
+smb:
+  null_session: true
+  share_name: executive
+
+ldap:
+  anonymous_bind: true
+  domain: stillbrook.internal
+
+jenkins:
+  script_console: true
+  url: http://jenkins:8080
+
+vault:
+  host: vault
+  port: 8200
+  unseal_keys_scattered: 3
+  key_threshold: 3
+  key_shares: 5

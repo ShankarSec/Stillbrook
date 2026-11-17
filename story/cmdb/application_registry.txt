@@ -1,0 +1,45 @@
+CMDB — Application Registry
+Classification: Admin
+Last Updated: 2026-03-18
+
+═══════════════════════════════════════════════════
+
+  APP-001  — BlackEcho Migration Console
+             Environment: Staging + Production
+             Owner: A. Kowalski
+             Service Accounts: sa_eng_pipeline, sa_eng_ci
+             Auth: Token (CI) + SSO (Human)
+
+  APP-002  — Orion Budget Portal
+             Environment: Production
+             Owner: J. Castillo
+             Service Accounts: sa_finance_sync,
+                               sa_finance_report,
+                               sa_finance_export
+             Auth: SSO + Token (Export)
+
+  APP-003  — Phoenix DR Console
+             Environment: Production
+             Owner: D. Nguyen (Ops)
+             Service Accounts: sa_ops_dr,
+                               sa_ops_monitor,
+                               sa_ops_failover
+             Auth: SSO + Token (Automation)
+
+  APP-004  — SpringOnboarding Portal
+             Environment: Production
+             Owner: M. Rivera
+             Service Accounts: sa_general_mail,
+                               sa_general_notify
+             Auth: SSO
+
+  APP-005  — Executive Recovery Portal
+             Environment: Production (restricted)
+             Owner: A. Fischer (CISO)
+             Access: CTO, CISO, VP Ops only
+             Auth: MFA + Hardware Token
+             NOTE: Not accessible via standard
+             SSO. Requires physical token at
+             Vault 2, Server Room B.
+
+═══════════════════════════════════════════════════   

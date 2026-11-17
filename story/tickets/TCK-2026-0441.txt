@@ -1,0 +1,15 @@
+Ticket: TCK-2026-0441
+Priority: High
+Status: Resolved
+Opened: 2026-02-18
+By: s.chen@stillbrook.internal
+Assigned: d.nguyen (Engineering)
+
+Subject: BlackEcho_Migration pipeline
+failing on staging
+
+Description: CI pipeline (sa_eng_ci)
+timing out on migration staging.
+Resource issue, not code.
+Resolution: Increased workers 4→8.
+Pipeline passing.   

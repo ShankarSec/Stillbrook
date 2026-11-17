@@ -1,0 +1,12 @@
+Ticket: TCK-2026-0312
+Priority: Low
+Status: Resolved
+Opened: 2026-02-14
+By: l.bennett@stillbrook.internal
+Assigned: helpdesk03
+
+Subject: Conference room booking — Room A
+
+Description: Booking conference room for
+Wellness Week planning (2 hours).
+Resolution: Booked.   

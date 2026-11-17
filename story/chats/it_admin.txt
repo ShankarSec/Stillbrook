@@ -1,0 +1,28 @@
+#it-admin | 2026-03-19 16:45
+
+@dnguyen: Privileged access review is
+  due June 1. I have 3 accounts to
+  document.
+
+@j.castillo: I'll handle the access
+  management side. sa_admin_audit token
+  is current.
+
+@m.rivera: backupadmin is 94 days old.
+  I've flagged it twice.
+
+@s.tanaka: I can do the access review
+  audit if needed. My contract runs
+  through May.
+
+@dnguyen: The shared credential policy
+  (backupadmin = ops lead) is a known
+  gap. Q4 review. Until then, we
+  document it and move on.
+
+@j.castillo: Also — intern01 asked if
+  their account is General or
+  SpringOnboarding. It's General. The
+  project is SpringOnboarding but the
+  department is General. Different
+  things.   

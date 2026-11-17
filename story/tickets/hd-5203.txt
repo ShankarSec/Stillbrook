@@ -1,0 +1,25 @@
+Ticket: HD-5203
+Subject: Orion portal login failing after project reassignment
+Department: Finance
+Priority: Medium
+Status: Resolved
+
+[User - Day 1, 09:15]
+Since I was moved to the Orion Budget project, my old
+credentials no longer work on the Orion portal. I tried
+reusing my previous password but got "Access denied."
+
+[Agent - Day 1, 14:30]
+Hi j.castillo, when you're reassigned to a new project,
+your portal credentials must be updated per policy.
+
+The convention for project-scoped accounts is documented
+in the Password Policy (v4.2.1). Note: Finance-scoped
+accounts use the "#" delimiter instead of "!".
+
+Please update your password and retry.
+
+[User - Day 2, 10:00]
+Updated. Working now. Thanks.
+
+[Status] Resolved   

@@ -1,0 +1,22 @@
+From: it-automation@stillbrook.com
+To: sa_finance_sync@stillbrook.com
+Subject: Service Account Provisioning — Orion Sync (Q2 2026)
+Date: Fri, 27 Mar 2026 03:00:00 +0530
+
+Automated Provisioning Notice
+
+Service Account: sa_finance_sync
+Project: Orion Sync
+Scope: Finance data synchronization (nightly batch)
+Initiative Code: OR-SYNC-2026
+
+This service account has been provisioned for the Orion Sync
+pipeline. Credentials must follow the naming convention in
+Password Policy (v4.2.1), section 5 (Service Accounts).
+
+Note: Service accounts use the "@" delimiter. The password
+must include the "Service" suffix after the project name.
+
+Rotation: 90 days. Next rotation: 2026-06-25.
+
+— IT Automation, Stillbrook   

@@ -1,0 +1,137 @@
+Stillbrook IT — Annual Performance Review Cycle 2026
+Classification: Confidential (Manager Access Only)
+Review Period: Q4 2025 – Q1 2026
+
+═══════════════════════════════════════════════════
+D. NGUYEN — Engineering
+═══════════════════════════════════════════════════
+
+Reviewer: A. Kowalski
+Rating: Exceeds Expectations
+
+Summary:
+  Led the BlackEcho migration staging work
+  through Q4. Handled the Phoenix_DR failover
+  incident on 2025-11-14 with minimal downtime.
+  Privileged access review completed on schedule.
+
+  Note: David holds three active accounts
+  (Eng, Ops, IT Admin). Access review for all
+  three is due by 2026-06-01.
+
+  Next: Complete Orion Integration API spec
+  by April.
+
+═══════════════════════════════════════════════════
+M. RIVERA — General / HR
+═══════════════════════════════════════════════════
+
+Reviewer: R. Sharma
+Rating: Meets Expectations
+
+Summary:
+  Managed Spring Onboarding cohort of 3 interns.
+  Supported DR operations during Q4 incident.
+  Infrastructure backup rotation completed.
+
+  Note: Maria is the primary contact for the
+  onboarding programme. She also holds a DR
+  support role and IT Admin backup access.
+
+  Next: Onboard intern04-intern07 (April cohort).
+
+═══════════════════════════════════════════════════
+J. CASTILLO — Finance
+═══════════════════════════════════════════════════
+
+Reviewer: C. Lindgren
+Rating: Exceeds Expectations
+
+Summary:
+  Delivered Q4 budget report ahead of schedule.
+  Orion Budget initiative kicked off successfully
+  in February. Access management audit completed
+  for IT Admin accounts.
+
+  Note: Juan is the sponsor for OrionBudget.
+  He also manages access provisioning for
+  IT Admin shared accounts.
+
+  Next: Q2 budget lock by May 15.
+
+═══════════════════════════════════════════════════
+R. SHARMA — General
+═══════════════════════════════════════════════════
+
+Reviewer: L. Tanaka
+Rating: Meets Expectations
+
+Summary:
+  Office administration running smoothly.
+  Financial reporting module integrated with
+  Orion Budget in March.
+
+  Note: Raj coordinates both the front office
+  and the finance reporting pipeline. His
+  General account is separate from his Finance
+  account.
+
+  Next: Q2 office relocation planning.
+
+═══════════════════════════════════════════════════
+P. OKAFOR — Engineering
+═══════════════════════════════════════════════════
+
+Reviewer: A. Kowalski
+Rating: Meets Expectations
+
+Summary:
+  CI/CD pipeline for BlackEcho_Migration is
+  stable. Managed intern onboarding for Spring
+  cohort.
+
+  Note: Priya's primary role is Engineering.
+  Her General account is for intern programme
+  coordination only.
+
+  Next: Pipeline automation for Orion_Integration
+  by June.
+
+═══════════════════════════════════════════════════
+L. TANAKA — Engineering
+═══════════════════════════════════════════════════
+
+Reviewer: S. Chen
+Rating: Exceeds Expectations
+
+Summary:
+  Build & Release for Orion Integration
+  completed on schedule. Audit & Compliance
+  integration for Orion Budget delivered.
+  Facilities coordination for office move
+  ongoing.
+
+  Note: Lena has the most cross-department
+  assignments (3). All accounts are active.
+
+  Next: Release pipeline v2 for BlackEcho.
+
+═══════════════════════════════════════════════════
+T. MULLER — General
+═══════════════════════════════════════════════════
+
+Reviewer: R. Sharma
+Rating: Meets Expectations
+
+Summary:
+  Front desk operations normal. Procurement
+  workflow for Orion Budget live. Monitoring
+  dashboard for Phoenix_DR operational.
+
+  Note: Tom is in three departments. His
+  Operations account is for the monitoring
+  dashboard only — not for DR failover.
+
+  Next: Q2 vendor contract renewals.
+
+═══════════════════════════════════════════════════   

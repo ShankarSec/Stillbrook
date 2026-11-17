@@ -1,0 +1,19 @@
+From: a.kowalski@stillbrook.internal
+To: eng-team@stillbrook.internal
+Subject: BlackEcho_Migration — Staging Complete
+Date: 2026-03-28
+
+Team,
+
+Staging migration is done. All 47 services
+migrated. QA (Karl) is running the regression
+suite this week.
+
+Production cutover is locked for 2026-06-15.
+No scope changes after April 30.
+
+David — can you confirm the DR snapshot for
+staging is current? Last one I saw was
+Feb 20.
+
+— Arjun   

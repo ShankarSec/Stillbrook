@@ -1,0 +1,28 @@
+FINANCE DEPARTMENT SHARE
+Access: Finance + IT Admin
+Mounted: \\stillbrook-fs\finance
+Classification: Internal
+
+═══════════════════════════════════════════════════
+CONTENTS
+═══════════════════════════════════════════════════
+
+  /Q2_budget_draft.xlsx
+  /OrionBudget_reporting_config.yaml
+  /sa_finance_export_token.enc
+  /procurement_PO_2026Q1.pdf
+  /audit_trail_Q4_2025.csv
+
+═══════════════════════════════════════════════════
+NOTES
+═══════════════════════════════════════════════════
+
+  - sa_finance_export_token.enc is the
+    current service token (encrypted).
+    Decryption key is in CMDB.
+  - Q2 budget lock: May 15. No changes
+    after that date.
+  - OrionBudget reporting config references
+    the system identifier directly.
+
+═══════════════════════════════════════════════════   

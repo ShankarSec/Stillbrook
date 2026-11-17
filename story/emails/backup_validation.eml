@@ -1,0 +1,25 @@
+From: m.rivera@stillbrook.internal
+To: d.nguyen@stillbrook.internal
+Cc: n.gupta@stillbrook.internal
+Subject: Backup Validation — BKS-001
+Date: 2026-03-15
+
+David,
+
+Ran the backup validation for BKS-001
+tonight. All 47 services backed up
+successfully. sa_admin_backup token is
+valid (rotated Jan 10).
+
+One issue: the finance export (BKS-004)
+ran at 01:00 but the log shows it
+overlapped with the primary backup window
+by 3 minutes. Not a problem this time,
+but we should stagger them.
+
+Also — backupadmin hasn't been rotated
+since January. I know Q4 review is
+pending, but it's been 90 days. Should
+I flag this to A. Fischer?
+
+— Maria   

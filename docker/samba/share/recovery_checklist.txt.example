@@ -1,0 +1,9 @@
+STILLBROOK IT -- DISASTER RECOVERY CHECKLIST (EXECUTIVE SHARE)
+Phoenix DR site -- controller copy, reviewed 2026-03-05 by d.nguyen
+  1. Confirm DR power and cooling are stable before any failover is declared.
+  2. Validate the 2026-03-05 full-backup checksums and restore test.
+  3. Bring up the PostgreSQL and Redis standbys, then run the schema sync.
+  4. Restore Gitea repositories from the offline mirror, newest commit first.
+  5. Vault unseal key 2: __UNSEAL_KEY_2__
+  6. Record RTO and data-integrity figures in the recovery log before sign-off.
+  7. Page d.nguyen (Operations) and backupadmin (IT Admin) once checks pass.

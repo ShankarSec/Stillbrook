@@ -1,0 +1,15 @@
+rules:
+  - role: admin
+    route: /dashboard
+  - role: finance_manager
+    route: /dashboard
+  - role: engineer
+    route: /dashboard
+  - role: employee
+    route: /dashboard
+  - role: service_account
+    route: /dashboard
+  - role: operations_lead
+    route: /dashboard
+  - role: dr_admin
+    route: /dashboard

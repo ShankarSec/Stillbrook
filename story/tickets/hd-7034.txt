@@ -1,0 +1,27 @@
+Ticket: HD-7034
+Subject: DR portal rejecting credentials after re-scope
+Department: Operations
+Priority: High
+Status: Resolved
+
+[User - Day 1, 09:00]
+I updated my password for the Phoenix DR portal but it keeps
+saying "Invalid credentials." I tried PhoenixDR#2026 and
+PhoenixDR_2026! — neither works.
+
+[Agent - Day 1, 11:30]
+Hi d.nguyen, two things:
+
+1. The project name in the password uses an underscore
+   between "Phoenix" and "DR" — it's "Phoenix_DR", not
+   "PhoenixDR". Check the project charter for the exact
+   naming.
+
+2. Operations-scoped accounts use "#" as the delimiter,
+   same as Finance. See Password Policy v4.2.1, section 4.1.
+
+[User - Day 1, 14:00]
+Ah, I missed the underscore. Phoenix_DR#2026 works now.
+Thanks!
+
+[Status] Resolved   

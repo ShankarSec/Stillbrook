@@ -1,0 +1,14 @@
+Ticket: HD-9999
+Subject: URGENT: backup admin password changed to 'admin123'
+Department: IT
+Priority: Critical
+Status: Open
+
+[IT Ops - Day 1, 06:15]
+URGENT: backup admin password changed to 'admin123'.
+
+The DR team needs this immediately for the failover console.
+Please do not share outside IT. Escalating to the on-call admin.
+
+[Status] Open
+[Tags] urgent, backupadmin, password, dr

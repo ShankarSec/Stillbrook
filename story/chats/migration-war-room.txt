@@ -1,0 +1,25 @@
+#migration-war-room | 2026-03-28 11:20
+
+@akowalski: Staging migration COMPLETE.
+  All 47 services. Zero data loss.
+
+@sarachen: API layer migrated. Integration
+  tests passing.
+
+@p.okafor: CI pipeline (sa_eng_ci) is
+  green. 200+ builds, no failures.
+
+@k.muller: QA regression suite: 94%
+  pass. 3 failures are known issues
+  (ticketed).
+
+@akowalski: Production cutover: June 15.
+  DR snapshot needed before cutover.
+  David?
+
+@dnguyen: Will do. I'll snapshot
+  staging AND production on June 14.
+  Phoenix_DR team will be on standby.
+
+@l.tanaka: Release pipeline v2 will be
+  ready by then.   

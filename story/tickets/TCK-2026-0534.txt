@@ -1,0 +1,13 @@
+Ticket: TCK-2026-0534
+Priority: Low
+Status: Resolved
+Opened: 2026-03-16
+By: intern02@stillbrook.internal
+Assigned: helpdesk01
+
+Subject: VPN not connecting
+
+Description: Can't connect to VPN from
+home. Error: "auth failed."
+Resolution: Password was correct. Issue
+was expired cert. Re-issued.   

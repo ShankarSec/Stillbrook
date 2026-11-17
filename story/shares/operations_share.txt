@@ -1,0 +1,28 @@
+OPERATIONS DEPARTMENT SHARE
+Access: Operations + IT Admin
+Mounted: \\stillbrook-fs\operations
+Classification: Internal
+
+═══════════════════════════════════════════════════
+CONTENTS
+═══════════════════════════════════════════════════
+
+  /phoenix_dr_runbook.pdf
+  /sa_ops_dr_trigger.sh
+  /sa_ops_monitor_config.yaml
+  /sa_ops_failover_runbook.md
+  /backup_schedule_2026Q1.csv
+  /escalation_contacts.txt
+
+═══════════════════════════════════════════════════
+NOTES
+═══════════════════════════════════════════════════
+
+  - DR runbook references Phoenix_DR
+    system identifier for all automation.
+  - Escalation contacts list includes
+    backupadmin as Level 3.
+  - Backup schedule shows BKS-001 through
+    BKS-004 with timestamps.
+
+═══════════════════════════════════════════════════   

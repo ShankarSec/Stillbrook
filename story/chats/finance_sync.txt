@@ -1,0 +1,21 @@
+#finance-sync | 2026-03-22 14:15
+
+@j.castillo: Q2 allocation approved.
+  $2.4M. OrionBudget is the system ID —
+  no underscore. I've confirmed with IT
+  Security.
+
+@r.sharma: I keep typing Orion_Budget
+  by habit. Locked my account again last
+  week.
+
+@j.castillo: You're not the only one.
+  I've put a note in the charter.
+
+@c.lindgren: Export pipeline is on track
+  for April 30. sa_finance_export token
+  is valid until April 28.
+
+@l.tanaka: Audit integration is done.
+  Reporting module has been live since
+  March 1.   

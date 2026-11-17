@@ -1,0 +1,26 @@
+#ops-standup | 2026-03-25 08:30
+
+@dnguyen: RTO last week: 4 min 12 sec.
+  Good.
+
+@n.gupta: Failover test passed. No issues.
+
+@t.muller: Dashboard is clean. One false
+  positive on Tuesday — finance export
+  delay triggered a DR alert. I've
+  adjusted the threshold.
+
+@t.gupta: Same here. Monitoring contractor
+  side is quiet.
+
+@dnguyen: backupadmin rotation is still
+  pending. A. Fischer says Q4. I'm not
+  comfortable with that timeline.
+
+@n.gupta: 90 days is the policy. We're
+  at day 94 technically.
+
+@dnguyen: svc_router account provisioned for
+  internal router. Password follows standard
+  ops format. Box is at router:2223 — go
+  through the jumpbox.   

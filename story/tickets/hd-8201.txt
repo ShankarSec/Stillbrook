@@ -1,0 +1,38 @@
+Ticket: HD-8201
+Subject: Orion Sync batch job failing — auth error on service account
+Department: Finance / IT
+Priority: High
+Status: Resolved
+
+[Monitoring Alert - 2026-03-28 02:15 UTC]
+Orion Sync nightly batch (run #4471) failed at auth stage.
+Service account: sa_finance_sync
+Error: 401 Unauthorized — token expired, password rotation
+overdue.
+
+[IT Ops - Day 1, 08:00]
+Investigating. The service account password was set during
+initial provisioning on 2026-03-27. Per policy, the format
+for service accounts is:
+
+  <ProjectName>Service@<Year>
+
+Where <ProjectName> is the full project name in PascalCase
+(no spaces, no underscores between words).
+
+[Finance Ops - Day 1, 09:30]
+Confirmed — the correct project name for the password is
+"OrionSync" (PascalCase, no space). The "@" delimiter is
+mandatory for service accounts per policy section 5.
+
+[IT Ops - Day 1, 10:00]
+Password updated. Batch run #4472 (02:00 UTC next day)
+completed successfully.
+
+[Status] Resolved
+
+[Follow-up - 2026-03-29]
+The chisel tunnel on the jumpbox (port 8082) was
+decommissioned last month. The active one is on
+the router (port 8081). Do not waste time on the
+old jumpbox listener — it just hangs.   

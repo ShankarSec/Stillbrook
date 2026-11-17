@@ -1,0 +1,15 @@
+Ticket: TCK-2026-0478
+Priority: Medium
+Status: Resolved
+Opened: 2026-03-02
+By: t.muller@stillbrook.internal
+Assigned: d.nguyen (Operations)
+
+Subject: Monitoring dashboard — false
+positive DR alert
+
+Description: Finance export delay
+triggered DR alert. Threshold too
+sensitive.
+Resolution: Threshold adjusted 5→10 min.
+No further alerts.   

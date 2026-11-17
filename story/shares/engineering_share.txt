@@ -1,0 +1,29 @@
+ENGINEERING DEPARTMENT SHARE
+Access: Engineering + IT Admin
+Mounted: \\stillbrook-fs\engineering
+Classification: Internal
+
+═══════════════════════════════════════════════════
+CONTENTS
+═══════════════════════════════════════════════════
+
+  /blackecho_migration_playbook.pdf
+  /Orion_Integration_api_spec.yaml
+  /sa_eng_pipeline_config.toml
+  /sa_eng_ci_runner.sh
+  /staging_dr_snapshot_manifest.json
+
+═══════════════════════════════════════════════════
+NOTES
+═══════════════════════════════════════════════════
+
+  - Migration playbook references the
+    system identifier for all credential
+    lookups.
+  - DR snapshot manifest lists all 47
+    services and their backup timestamps.
+  - sa_eng_ci_runner.sh contains the
+    pipeline trigger (token-based, no
+    interactive login).
+
+═══════════════════════════════════════════════════   

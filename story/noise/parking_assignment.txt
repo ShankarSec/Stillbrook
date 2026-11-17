@@ -1,0 +1,56 @@
+Stillbrook IT — Parking Assignment (Q2 2026)
+Classification: Public
+Facilities: L. Tanaka
+
+═══════════════════════════════════════════════════
+FLOOR 1 (Executive)
+═══════════════════════════════════════════════════
+
+  P-101  E. Whitfield
+  P-102  D. Okafor
+  P-103  S. Lindqvist
+  P-104  R. Marchetti
+  P-105  A. Fischer
+
+═══════════════════════════════════════════════════
+FLOOR 2 (Engineering / Operations)
+═══════════════════════════════════════════════════
+
+  P-201  d.nguyen
+  P-202  a.kowalski
+  P-203  s.chen
+  P-204  v.das
+  P-205  l.tanaka
+  P-206  p.okafor
+  P-207  n.gupta
+  P-208  t.gupta
+  P-209  k.muller
+  P-210  r.okafor
+
+═══════════════════════════════════════════════════
+FLOOR 3 (Finance / General)
+═══════════════════════════════════════════════════
+
+  P-301  j.castillo
+  P-302  r.sharma
+  P-303  c.lindgren
+  P-304  t.muller
+  P-305  m.rivera
+  P-306  a.patel
+  P-307  s.kumar
+  P-308  l.bennett
+  P-309  j.patel
+  P-310  v.patel
+  P-311  intern01
+  P-312  intern02
+  P-313  intern03
+  P-314  helpdesk01
+  P-315  helpdesk02
+  P-316  helpdesk03
+  P-317  p.chen
+  P-318  c.das
+
+═══════════════════════════════════════════════════
+NOTE: P-304 dispute resolved 2026-03-18.
+      s.kumar's spot was P-307, not P-304.
+═══════════════════════════════════════════════════   

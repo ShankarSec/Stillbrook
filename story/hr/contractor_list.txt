@@ -1,0 +1,30 @@
+Stillbrook IT — Active Contractors (Q1 2026)
+Classification: Internal
+Source: Procurement / HR
+
+═══════════════════════════════════════════════════
+
+  k.muller    — QA Testing          — Engineering  — End: 2026-06-30
+  r.okafor    — Security Audit      — Engineering  — End: 2026-05-15
+  b.sharma    — DevOps Support      — Engineering  — End: 2026-04-30
+  t.gupta     — Monitoring          — Operations   — End: 2026-07-31
+  n.lindgren  — Compliance          — Operations   — End: 2026-06-15
+  c.das       — Tax Filing          — Finance      — End: 2026-04-15
+  s.tanaka    — Access Review       — IT Admin     — End: 2026-05-31
+  l.bennett   — Events Coordination — General      — End: 2026-06-30
+  p.chen      — Translation         — General      — End: 2026-03-31
+
+═══════════════════════════════════════════════════
+RECENTLY TERMINATED
+═══════════════════════════════════════════════════
+
+  d.kowalski  — Dev Support         — Engineering  — Ended: 2026-02-01
+  m.bennett   — Admin Support       — General      — Ended: 2026-01-20
+  h.gupta     — Ops Support         — Operations   — Ended: 2026-03-01
+
+═══════════════════════════════════════════════════
+NOTE: Contractor accounts follow the same
+credential policy as permanent staff.
+Contractor access is revoked 48h after
+contract end date.
+═══════════════════════════════════════════════════   

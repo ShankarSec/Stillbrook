@@ -1,0 +1,44 @@
+Stillbrook IT — Organizational Chart (2026)
+Classification: Internal
+
+═══════════════════════════════════════════════════
+
+                    E. Whitfield (CTO)
+                    │
+        ┌───────────┼───────────────┐
+        │           │               │
+   D. Okafor    S. Lindqvist    R. Marchetti
+   (VP Eng)     (VP Finance)    (VP Ops)
+        │           │               │
+        ├── A. Kowalski           ├── D. Nguyen (DR Coord)
+        │   ├── D. Nguyen (Eng)   ├── M. Rivera (DR Support)
+        │   ├── S. Chen           ├── N. Gupta
+        │   ├── V. Das            ├── T. Muller (Monitoring)
+        │   ├── L. Tanaka (Eng)   └── T. Gupta (contract)
+        │   ├── P. Okafor
+        │   └── K. Muller (contract)
+        │
+   ┌────┼────────────────────┐
+   │    │                    │
+   J. Castillo          R. Sharma (Gen)
+   (Finance Lead)       ├── M. Rivera (HR)
+   ├── R. Sharma (Fin)  ├── P. Okafor (Interns)
+   ├── L. Tanaka (Fin)  ├── L. Tanaka (Facilities)
+   ├── C. Lindgren      └── T. Muller (Front Desk)
+   ├── T. Muller (Proc)
+   ├── J. Patel
+   └── V. Patel
+
+                    A. Fischer (CISO)
+                    │
+                    ├── D. Nguyen (Privileged Access)
+                    ├── M. Rivera (Infra Backup)
+                    ├── J. Castillo (Access Mgmt)
+                    ├── S. Tanaka (contract)
+                    └── backupadmin (shared)
+
+═══════════════════════════════════════════════════
+
+NOTE: Dotted lines indicate secondary/tertiary
+assignments. A person may report to multiple
+managers across departments.   

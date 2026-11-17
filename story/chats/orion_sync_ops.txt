@@ -1,0 +1,36 @@
+[Day 1, 07:45] @it-ops → #finance-infra:
+Orion Sync batch is down. sa_finance_sync auth is failing.
+Looks like the provisioning email had the right format but
+someone used a space in the project name. "Orion Sync
+Service@2026" instead of "OrionSyncService@2026".
+
+[Day 1, 08:10] @j.castillo → #finance-infra:
+Ugh, PascalCase again. Why can't it just be one word.
+
+[Day 1, 08:15] @it-ops → #finance-infra:
+Policy section 5. Project names in service account passwords
+are always PascalCase, no spaces, no underscores. The
+"Service" suffix is mandatory to distinguish from the
+human-facing Orion portal credentials.
+
+[Day 1, 08:20] @d.nguyen → #finance-infra:
+For reference — this is the third time a service account
+password has been set wrong this quarter. Maybe add a
+validation check to the provisioning script?
+
+[Day 1, 08:25] @it-ops → #finance-infra:
+Agreed. Filing a change request. For now, password is
+fixed and batch is back on schedule.
+
+[Day 2, 09:00] @j.castillo → #finance-infra:
+Orion Budget dashboard is updated for Q2. sa_finance_sync
+should be pushing data correctly now — @d.nguyen can you
+confirm on the DR side?
+
+[Day 2, 09:30] @d.nguyen → #finance-infra:
+Confirmed. Last 3 batch runs all green.
+
+[Day 3, 10:05] @j.castillo → #finance-infra:
+Heads up for anyone still bookmarking old links: finance migrated to
+the v2 API this quarter, the old /finance/ endpoints are deprecated.
+Use the v2 exports path for everything from now on.   

@@ -1,0 +1,13 @@
+#!/bin/sh -e
+# =====================================================================
+# Stillbrook -- /etc/rc.local on the vault host
+#
+# The container claims to run a much older kernel than it really does.
+# /proc/version is read only procfs, so the string is written to a
+# regular file here and surfaced through /usr/local/bin/proc-version
+# (a bind mount over /proc/version is attempted by the entrypoint, but
+# Docker normally denies it without CAP_SYS_ADMIN).
+# =====================================================================
+printf 'Linux vault-host 4.15.0-91-generic #91-Ubuntu SMP\n' > /var/run/proc-version
+chmod 0644 /var/run/proc-version 2>/dev/null || true
+exit 0

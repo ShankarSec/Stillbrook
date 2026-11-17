@@ -1,0 +1,14 @@
+Ticket: TCK-2026-0234
+Priority: High
+Status: Resolved
+Opened: 2026-02-05
+By: s.chen@stillbrook.internal
+Assigned: d.nguyen (Engineering)
+
+Subject: BlackEcho_Migration — staging
+environment timeout
+
+Description: CI pipeline timing out on
+staging. sa_eng_ci worker count too low.
+Resolution: Scaled workers 4→8. Pipeline
+green.   

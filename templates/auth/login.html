@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<form method="post">
+  <input type="text" name="username" placeholder="Username" required>
+  <input type="password" name="password" placeholder="Password" required>
+  <button type="submit">Log in</button>
+</form>
+<p class="muted">
+  No account? <a href="{{ url_for('auth.register') }}">Register</a> ·
+  <a href="{{ url_for('auth.password_reset_request') }}">Forgot password?</a>
+</p>
+<p class="muted" style="font-size:0.75rem; margin-top:20px;">
+  Onboarding resources: <a href="/story/reports/password_policy.txt">Password Policy</a>
+</p>
+{% endblock %}
+EOF   
+
+

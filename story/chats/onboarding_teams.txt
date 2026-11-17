@@ -1,0 +1,11 @@
+[Day 3, 11:30] @onboarding-coordinator → @intern01:
+Hey intern01! Reset link is in your inbox.
+Heads up — most onboarding accounts still use the
+project name convention. Check the policy page if
+you're unsure about the format.
+
+[Day 3, 11:45] @intern01 → @onboarding-coordinator:
+Got it, thanks!
+
+[Day 3, 15:00] @it-support → @intern01:
+Laptop handoff at your desk. Badge: SR-0042.   

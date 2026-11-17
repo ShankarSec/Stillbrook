@@ -1,0 +1,14 @@
+Ticket: TCK-2026-0502
+Priority: Low
+Status: Resolved
+Opened: 2026-03-05
+By: p.chen@stillbrook.internal
+Assigned: m.rivera
+
+Subject: Translation review — onboarding
+docs (French, German)
+
+Description: Translated onboarding docs
+ready for review.
+Resolution: Reviewed and approved by
+M. Rivera. Published to Confluence.   

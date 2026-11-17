@@ -1,0 +1,46 @@
+PROJECT CHARTER — Orion Budgeting Initiative
+ID: SB-PRJ-2026-007
+Status: Active
+Sponsor: J. Castillo
+Start: 2026-02-01
+Target Completion: 2026-12-15
+Classification: Internal
+
+═══════════════════════════════════════════════════
+SCOPE
+═══════════════════════════════════════════════════
+
+Annual budgeting automation, financial
+reporting pipeline, and data export
+infrastructure.
+
+═══════════════════════════════════════════════════
+PROJECT IDENTIFIER
+═══════════════════════════════════════════════════
+
+Official name: Orion Budget
+System identifier: OrionBudget
+  NOTE: No underscore. Confirmed by IT Security
+  on 2026-02-03. Do NOT use "Orion_Budget".
+Short code (internal chat only): ORN-BUD
+
+═══════════════════════════════════════════════════
+TEAM
+═══════════════════════════════════════════════════
+
+  J. Castillo   — Budget & Reporting (Sponsor)
+  R. Sharma     — Financial Reporting
+  L. Tanaka     — Audit & Compliance
+  C. Lindgren   — Data Export Lead
+  T. Muller     — Procurement
+
+═══════════════════════════════════════════════════
+MILESTONES
+═══════════════════════════════════════════════════
+
+  M1: Reporting module live         — 2026-03-01 ✓
+  M2: Audit integration             — 2026-03-15 ✓
+  M3: Export pipeline               — 2026-04-30
+  M4: Q2 budget lock                — 2026-05-15
+
+═══════════════════════════════════════════════════   

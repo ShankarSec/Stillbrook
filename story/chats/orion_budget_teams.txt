@@ -1,0 +1,16 @@
+[Day 1, 09:30] @finance-ops → @j.castillo:
+Heads up — your Orion access is locked until you update
+your portal password. The format is the same as always,
+just use the project name. Check the policy if you need
+a refresher.
+
+[Day 1, 10:15] @j.castillo → @finance-ops:
+Got it. Also, is the Q2 data already loaded into Orion?
+
+[Day 1, 10:20] @finance-ops → @j.castillo:
+Yes, uploaded last Friday. You'll have full read access
+once your credentials are updated.
+
+[Day 2, 09:45] @m.rivera → @j.castillo:
+Hey, saw you got the Orion assignment. Congrats!
+Let me know if you need any handover docs from last cycle.   

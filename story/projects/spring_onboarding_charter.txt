@@ -1,0 +1,45 @@
+PROJECT CHARTER — Spring Onboarding 2026
+ID: SB-PRJ-2026-001
+Status: Active
+Sponsor: M. Rivera
+Start: 2026-02-15
+Target Completion: 2026-06-30
+Classification: Internal
+
+═══════════════════════════════════════════════════
+SCOPE
+═══════════════════════════════════════════════════
+
+Q1-Q2 new hire onboarding, intern programme
+management, and general administrative support.
+
+═══════════════════════════════════════════════════
+PROJECT IDENTIFIER
+═══════════════════════════════════════════════════
+
+Official name: SpringOnboarding
+System identifier: SpringOnboarding
+  NOTE: Single word, no underscore, no space.
+  This is the onboarding account format per
+  policy §3.
+Short code (internal chat only): SPR-ONB
+
+═══════════════════════════════════════════════════
+TEAM
+═══════════════════════════════════════════════════
+
+  M. Rivera     — Onboarding & HR Coordinator (Sponsor)
+  R. Sharma     — Office Administration
+  P. Okafor     — Intern Programme Coordinator
+  L. Tanaka     — Facilities & Logistics
+  T. Muller     — Front Desk & Reception
+
+═══════════════════════════════════════════════════
+COHORTS
+═══════════════════════════════════════════════════
+
+  Spring 2026 (Feb):  intern01, intern02, intern03
+  April 2026:         intern04, intern05 (onboard 04-01)
+  April 2026:         intern06, intern07 (onboard 04-15)
+
+═══════════════════════════════════════════════════   

@@ -1,0 +1,12 @@
+Ticket: TCK-2026-0189
+Priority: Low
+Status: Resolved
+Opened: 2026-01-28
+By: s.kumar@stillbrook.internal
+Assigned: helpdesk01
+
+Subject: Gym access request
+
+Description: Requesting gym access for
+Q1.
+Resolution: Approved. Access card issued.   

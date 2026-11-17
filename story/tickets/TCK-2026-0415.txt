@@ -1,0 +1,12 @@
+Ticket: TCK-2026-0415
+Priority: Low
+Status: Resolved
+Opened: 2026-02-28
+By: a.patel@stillbrook.internal
+Assigned: helpdesk02
+
+Subject: Birthday cake order — March
+
+Description: 4 birthdays in March.
+Ordering cake from local bakery.
+Resolution: Ordered. Delivered March 15.   

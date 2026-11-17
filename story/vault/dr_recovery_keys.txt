@@ -1,0 +1,42 @@
+DR RECOVERY KEYS
+Classification: RESTRICTED — EYES ONLY
+Access: CTO, CISO, VP Ops
+Storage: Vault 2, Server Room B, Drawer 3
+
+═══════════════════════════════════════════════════
+
+BKS-001 (Primary):
+  Key: [REDACTED — hardware token required]
+  Location: Token slot 1, Vault 2
+
+BKS-002 (Offsite):
+  Key: [REDACTED — hardware token required]
+  Location: Token slot 2, Vault 2
+
+BKS-003 (Archive):
+  Key: [REDACTED — manual entry required]
+  Location: Card in Drawer 3, Vault 2
+
+BKS-004 (Finance):
+  Key: [REDACTED — sa_finance_export token]
+  Location: CMDB → Finance Services
+
+═══════════════════════════════════════════════════
+RECOVERY PROCEDURE
+═══════════════════════════════════════════════════
+
+  1. Insert hardware token into Vault 2 reader
+  2. Enter MFA code (SMS to registered number)
+  3. Fingerprint scan
+  4. Select backup source (BKS-001 through 004)
+  5. Initiate restore
+  6. Verify checksum
+  7. Log all actions to dr_access.log
+
+═══════════════════════════════════════════════════
+NOTE: This file is the LAST line of defense.
+      If you can read this, you have already
+      compromised the backupadmin account.
+      Log out. Notify A. Fischer. Reset all
+      credentials.
+═══════════════════════════════════════════════════   

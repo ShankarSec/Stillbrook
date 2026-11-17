@@ -1,0 +1,27 @@
+From: it-infra@stillbrook.com
+To: backupadmin@stillbrook.com
+Subject: DR Failover Credentials — Phoenix DR (Q3 2026)
+Date: Mon, 30 Mar 2026 06:00:00 +0530
+
+Automated Provisioning Notice
+
+Account: backupadmin
+Role: DR Failover Administrator
+Project: Phoenix_DR
+Scope: Full DR environment (production + standby)
+Initiative: Phoenix DR Q3 Failover Drill
+
+This account holds elevated privileges for disaster recovery
+failover operations. Credentials must follow the naming
+convention in Password Policy (v4.2.1), section 4 (Operations
+and IT Admin Accounts).
+
+Note: The project identifier is "Phoenix_DR" (underscore,
+not space). This is the same project scope as the operations
+lead (d.nguyen).
+
+Rotation: 90 days. Next rotation: 2026-06-28.
+Alert: This account is monitored. All login attempts are
+logged to the DR audit trail.
+
+— IT Infrastructure, Stillbrook   

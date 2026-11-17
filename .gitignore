@@ -1,0 +1,44 @@
+# Local environment / secrets
+.env
+*.env.local
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated application databases (seeded into the image at build time)
+database/*.db
+
+# Runtime-generated challenge secrets (template is tracked instead)
+docker/samba/share/recovery_checklist.txt
+
+# Logs
+logging/**/*.log
+logging/detections/alerts.log
+docker/vault/init/init.log
+
+# Release archives / temporary downloads
+stillbrook-images.tar
+stillbrook-project.tar.gz
+CYBER-RANGE-STILLBROOK.tar.gz
+*.tar
+*.tar.gz
+
+# Exception: the vsftpd source archive is a REQUIRED build input for the
+# intentionally backdoored FTP challenge. It must stay tracked so a fresh
+# clone can build the image (verified SHA-256 is pinned in its Dockerfile).
+!docker/vsftpd/vsftpd-2.3.4.tar.gz
+
+# Generated runtime key material (never commit private keys)
+docker/router/id_rsa
+docker/router/id_rsa.pub
+docker/router/known_hosts
+docker/vaulthost/ssh_host_ed25519_key
+docker/vaulthost/ssh_host_ed25519_key.pub
+docker/vaulthost/authorized_keys
+
+# OS files
+.DS_Store
+Thumbs.db

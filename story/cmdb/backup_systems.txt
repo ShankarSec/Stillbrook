@@ -1,0 +1,43 @@
+CMDB — Backup Systems Registry
+Classification: Admin
+Last Updated: 2026-03-10
+
+═══════════════════════════════════════════════════
+
+  BKS-001  — Primary backup (on-prem)
+             Location: Server room B, Rack 4
+             Managed by: sa_admin_backup
+             Owner: M. Rivera (IT Admin)
+             Schedule: Daily 02:00 UTC
+
+  BKS-002  — Secondary backup (offsite)
+             Location: DR Site, Floor 1
+             Managed by: sa_admin_backup
+             Owner: M. Rivera (IT Admin)
+             Schedule: Daily 03:00 UTC
+
+  BKS-003  — Archive (cold storage)
+             Location: Tape library, Vault 2
+             Managed by: backupadmin (manual)
+             Owner: D. Nguyen (IT Admin)
+             Schedule: Weekly Sunday
+
+  BKS-004  — Finance data backup
+             Location: Finance server cluster
+             Managed by: sa_finance_export
+             Owner: C. Lindgren
+             Schedule: Daily 01:00 UTC
+
+═══════════════════════════════════════════════════
+KNOWN ISSUES
+═══════════════════════════════════════════════════
+
+  - BKS-001: Backup window conflicts with
+    sa_finance_export (both at 02:00).
+    Resolved: Finance export shifted to 01:00.
+    (See DR standup notes, 2026-03-08)
+
+  - BKS-003: backupadmin has not been rotated
+    since 2026-01-10. Q4 review pending.
+
+═══════════════════════════════════════════════════   

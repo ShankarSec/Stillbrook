@@ -1,0 +1,27 @@
+Ticket: HD-9042
+Subject: DR failover drill rehearsal — backupadmin auth failure
+Department: IT
+Priority: Critical
+Status: Resolved
+
+[IT Ops - Day 1, 07:00]
+During the pre-drill rehearsal, the backupadmin account
+failed to authenticate against the DR portal. The account
+was provisioned on 2026-03-30 but the password was set
+incorrectly during automation.
+
+[IT Ops - Day 1, 09:30]
+Root cause: The provisioning script used "PhoenixDR" (no
+underscore) instead of "Phoenix_DR". The project identifier
+in the password must match the project charter exactly.
+
+Correct format for IT Admin / Operations accounts:
+  <ProjectName>#<Year>
+  Where ProjectName = "Phoenix_DR" (with underscore)
+
+[IT Ops - Day 1, 10:15]
+Password corrected. Rehearsal completed successfully.
+Failover RTO: 4m 12s (within 5m SLA).
+
+[Status] Resolved
+[Tags] dr, failover, critical, provisioning-bug   

@@ -1,0 +1,36 @@
+[Day 1, 06:45] @it-infra → #dr-ops:
+Heads up — backupadmin auth is failing in rehearsal.
+Provisioning script bug: dropped the underscore in
+"Phoenix_DR". Fixing now.
+
+[Day 1, 07:10] @d.nguyen → #dr-ops:
+I saw the alert. For reference, my credentials work fine
+— it's just the admin account that got the wrong format.
+Both should be Phoenix_DR#2026 per policy.
+
+[Day 1, 07:15] @it-infra → #dr-ops:
+Confirmed. Same project, same delimiter (#), same year.
+The bug was purely in the string construction — "PhoenixDR"
+vs "Phoenix_DR". Fixed in the script, filing a CR.
+
+[Day 1, 08:00] @d.nguyen → #dr-ops:
+Interesting — so the human account and the admin account
+share the same password? That's... not ideal from a
+security standpoint, right?
+
+[Day 1, 08:05] @it-infra → #dr-ops:
+It's a known gap. The policy currently allows it because
+both are scoped to the same project environment. Filing
+a policy review for Q4. For now, it's by design.
+
+[Day 2, 09:00] @m.rivera → #dr-ops:
+BlackEcho Migration data layer review moved to Thursday.
+@d.nguyen are you free?
+
+[Day 2, 09:10] @d.nguyen → #dr-ops:
+Yes, Thursday works. I'll be on the DR side until then.
+
+[Day 2, 09:25] @it-infra → #dr-ops:
+Separate note: ops lead confirmed the DR password follows the
+standard ops format — project identifier, underscore, year,
+with the usual DR delimiter. Rotate backupadmin accordingly.   

@@ -1,0 +1,6 @@
+# Stillbrook -- internal router health probe (runs as root every 5 min)
+# The probe is deliberately world writable (0666), i.e. not executable,
+# so cron starts it through the shell.
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+*/5 * * * * root /bin/sh /opt/scripts/healthcheck.sh

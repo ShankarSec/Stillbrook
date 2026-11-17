@@ -1,0 +1,27 @@
+[Day 1, 08:00] @ops-lead → @d.nguyen:
+Phoenix DR failover drill is locked in for Q3. You'll need
+DR portal access before then. Re-scope your credentials per
+policy — remember the project name has an underscore in it.
+
+[Day 1, 08:45] @d.nguyen → @ops-lead:
+Quick clarification — is it "Phoenix DR" with a space or
+"Phoenix_DR" with an underscore in the password?
+
+[Day 1, 08:50] @ops-lead → @d.nguyen:
+Underscore. The project charter names it "Phoenix_DR".
+The space is just for display in emails.
+
+[Day 1, 09:10] @j.castillo → @d.nguyen:
+Hey, since we're both on # — I assume Operations uses the
+same delimiter as Finance? Confirming for my own notes.
+
+[Day 1, 09:12] @d.nguyen → @j.castillo:
+Yes, confirmed. # for both.
+
+[Day 2, 10:00] @m.rivera → @d.nguyen:
+BlackEcho Migration dashboard is live. I'll send you the
+invite for the data layer review next week.
+
+[Day 2, 10:05] @d.nguyen → @m.rivera:
+Sounds good. I'll be on the DR side most of next week
+though, so let's aim for Thursday.   

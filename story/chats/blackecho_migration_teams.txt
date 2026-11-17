@@ -1,0 +1,19 @@
+[Day 1, 08:00] @eng-ops → @m.rivera:
+BlackEcho Migration kickoff is Friday 10:00. You'll need
+updated portal credentials before then. The dashboard
+is project-scoped — use the full project name per policy.
+
+[Day 1, 08:30] @m.rivera → @eng-ops:
+Got it. Quick question — do I use "BlackEcho" or
+"BlackEcho Migration" in the password?
+
+[Day 1, 08:35] @eng-ops → @m.rivera:
+Full name. The policy says project name, not short code.
+Check section 3.2 if you need a refresher.
+
+[Day 2, 09:00] @d.nguyen → @m.rivera:
+Hey, I'll be handling the data layer for the migration.
+Let me know when the dashboard is up so I can get access.
+
+[Day 2, 09:15] @m.rivera → @d.nguyen:
+Should be live by EOD. I'll send you the invite.   

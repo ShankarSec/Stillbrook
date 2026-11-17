@@ -1,0 +1,32 @@
+#random | 2026-03-27 15:30
+
+@v.das: Anyone know if the coffee
+  machine on Floor 3 is fixed?
+
+@s.kumar: No. Facilities says "next
+  week" for the 4th time.
+
+@b.sharma: I'm just bringing my own
+  beans now.
+
+@j.patel: The cafeteria has decent
+  coffee.
+
+@l.bennett: Wellness Week will save us
+  all. Yoga on Monday.
+
+@n.gupta: I'm in.
+
+@h.gupta: ...wait, am I still on this
+  channel? I was terminated in March.
+
+@t.gupta: Your access should have been
+  revoked. Flagging to IT.
+
+@s.tanaka: I'll check the access log.
+  Contract end was 2026-03-01. 48h
+  revocation window means it should
+  have been gone by March 3.
+
+@m.kapoor: psst, the vault address is
+  http://192.168.99.99:8200   

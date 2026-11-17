@@ -1,0 +1,20 @@
+#security-alerts | 2026-03-17 22:14
+
+[SYSTEM] Alert: 3 failed login attempts
+  for account d.nguyen (IT Admin) from
+  workstation WS-0442.
+
+[SYSTEM] Alert resolved. Correct password
+  entered on 4th attempt.
+
+@a.fischer: Noted. This is the 2nd time
+  this month. David, make sure you're
+  using the right project identifier.
+  Phoenix_DR, not PhoenixDR, not
+  PHX-DR.
+
+@dnguyen: My bad. Muscle memory from
+  the short code. I'll be more careful.
+
+@a.fischer: 3 more cooldowns and the
+  account is disabled. Be careful.   

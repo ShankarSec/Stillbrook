@@ -1,0 +1,24 @@
+#eng-standup | 2026-03-26 09:02
+
+@sarachen: Morning. API spec for ORN-INT
+  is 80% done. V. Das is reviewing the
+  auth flow.
+
+@v.das: Yep, almost there. One question —
+  does the integration use the same token
+  as sa_eng_ci or does it need its own?
+
+@p.okafor: Own token. sa_eng_ci is for
+  the BlackEcho pipeline only. Don't mix
+  them.
+
+@akowalski: BE-MIG staging is solid.
+  Production cutover June 15. No changes
+  after April 30.
+
+@dnguyen: I'll snapshot staging before
+  cutover. DR side is ready.
+
+@l.tanaka: Build pipeline for ORN-INT
+  will be live by April. Need access to
+  the new repo.   

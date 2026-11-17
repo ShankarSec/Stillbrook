@@ -1,0 +1,112 @@
+CMDB — Service Account Inventory
+Last Audit: 2026-03-20
+Maintained by: IT Operations (A. Fischer, CISO)
+Classification: Admin
+
+═══════════════════════════════════════════════════
+FINANCE SERVICES
+═══════════════════════════════════════════════════
+
+  sa_finance_sync      — Project: OrionBudget
+                         Function: Data sync (ERP → BI)
+                         Owner: C. Lindgren
+                         Last Rotation: 2026-01-15
+
+  sa_finance_report    — Project: OrionBudget
+                         Function: Scheduled report gen
+                         Owner: R. Sharma
+                         Last Rotation: 2026-02-01
+
+  sa_finance_export    — Project: OrionBudget
+                         Function: Data export (CSV/JSON)
+                         Owner: C. Lindgren
+                         Last Rotation: 2026-01-28
+
+═══════════════════════════════════════════════════
+ENGINEERING SERVICES
+═══════════════════════════════════════════════════
+
+  sa_eng_pipeline      — Project: BlackEcho_Migration
+                         Function: CI/CD pipeline runner
+                         Owner: P. Okafor
+                         Last Rotation: 2026-02-10
+
+  sa_eng_ci            — Project: BlackEcho_Migration
+                         Function: Continuous integration
+                         Owner: P. Okafor
+                         Last Rotation: 2026-02-10
+
+═══════════════════════════════════════════════════
+OPERATIONS SERVICES
+═══════════════════════════════════════════════════
+
+  sa_ops_dr            — Project: Phoenix_DR
+                         Function: DR automation trigger
+                         Owner: D. Nguyen (Ops)
+                         Last Rotation: 2026-01-20
+
+  sa_ops_monitor       — Project: Phoenix_DR
+                         Function: Monitoring agent
+                         Owner: T. Muller (Ops)
+                         Last Rotation: 2026-02-05
+
+  sa_ops_failover      — Project: Phoenix_DR
+                         Function: Failover execution
+                         Owner: N. Gupta
+                         Last Rotation: 2026-01-20
+
+═══════════════════════════════════════════════════
+GENERAL SERVICES
+═══════════════════════════════════════════════════
+
+  sa_general_mail      — Project: SpringOnboarding
+                         Function: Mail relay
+                         Owner: M. Rivera
+                         Last Rotation: 2026-02-15
+
+  sa_general_notify    — Project: SpringOnboarding
+                         Function: Notification dispatch
+                         Owner: M. Rivera
+                         Last Rotation: 2026-02-15
+
+═══════════════════════════════════════════════════
+ADMIN SERVICES
+═══════════════════════════════════════════════════
+
+  sa_admin_backup      — Project: Phoenix_DR
+                         Function: Backup agent
+                         Owner: M. Rivera (IT Admin)
+                         Last Rotation: 2026-01-10
+
+  sa_admin_audit       — Project: Phoenix_DR
+                         Function: Audit log collector
+                         Owner: J. Castillo (IT Admin)
+                         Last Rotation: 2026-01-10
+
+═══════════════════════════════════════════════════
+INTERNAL INFRASTRUCTURE
+══════════════════════════════════════════════════
+
+  internal-router | 172.28.0.10 | SSH:2223, Chisel:8081 | internal
+  vault-host      | 172.28.0.20 | SSH:2224, Vault:8200 | internal
+
+══════════════════════════════════════════════════
+DECOMMISSIONED
+═══════════════════════════════════════════════════
+
+  legacy_sa            — Replaced 2025-09
+  old_backup_agent     — Replaced 2025-11
+  temp_export          — Removed 2026-01
+
+═══════════════════════════════════════════════════
+NOTE: All service accounts use token-based auth.
+      Interactive login is DISABLED.
+      Rotation: 90 days (automated).
+      PascalCase required for credential construction.
+═══════════════════════════════════════════════════   
+
+══════════════════════════════════════════════════
+TRAINING CHECKPOINT
+══════════════════════════════════════════════════
+
+  FLAG-03: Service inventory enumerated

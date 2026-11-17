@@ -1,0 +1,17 @@
+Ticket: TCK-2026-0589
+Priority: High
+Status: Resolved
+Opened: 2026-03-22
+By: d.nguyen@stillbrook.internal
+Assigned: IT Admin
+
+Subject: Privileged access review —
+preparation
+
+Description: Preparing for Q2 privileged
+access review (due June 1). Need to
+document all 3 d.nguyen accounts
+(Eng, Ops, IT Admin) and their project
+assignments.
+Resolution: Documentation compiled.
+Submitted to A. Fischer.   

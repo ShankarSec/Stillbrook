@@ -1,0 +1,190 @@
+Stillbrook Corporation — Internal News
+Last Updated: 2026-03-28
+Editor: L. Bennett (Events) | Next issue: April 25
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+Q1 2026 ALL-HANDS — HIGHLIGHTS
+───────────────────────────────
+
+  - Revenue up 12% YoY. Ewan thanked the team. Slides are on the intranet.
+  - BlackEcho migration staging complete (47 services, zero data loss)
+  - Phoenix_DR recovery testing successful (RTO under 5 min for 3rd consecutive quarter)
+  - Orion Budget Q2 allocation approved ($2.4M)
+  - New cafeteria payment kiosks online.pipe your badge. No more cash.
+  - Floor 3 parking reassignment completed.Check the facilities board.
+  - Wellness week attendance exceeded expectations (87/112 showed up)
+  - IT Helpdesk average resolution time:4.2 hours (down from 6.1 in Q4)
+  - New standing desks delivered to Engineering (Floor 2, Bay 4)
+  - Printer on Floor 2 replaced. The old one is in the parking lot. Good riddance.
+  - Employee satisfaction survey: 78% would recommend Stillbrook to a friend.(Up from 71% last year. The free snacks helped.)
+  - New badge photos available. Submit requests to HR by May 15.
+  - Lost & found: 3 umbrellas, 1 laptop charger, 1 mystery scarf. Claim at front desk.
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+WELLNESS WEEK — APRIL 14-18
+───────────────────────────────
+
+  Mon: Yoga (capacity 30, sign up early)
+  Tue: Step Challenge (goal: 50k team)
+  Wed: Healthy Cooking Demo
+  Thu: Mental Health Workshop
+  Fri: Team Lunch (cafeteria)
+
+  Sign-ups: Intranet → Wellness → 2026
+  Coordinator: L. Bennett
+  Last year's winner: s.kumar (52,341 steps)
+  This year's prize: Friday lunch on the
+  company (which is... lunch. On a Friday.
+  In the cafeteria. But it's free.)
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+FACILITIES UPDATE
+───────────────────────────────
+
+  - Coffee machine (Floor 3): Still broken."Next week" — Facilities, 4th time.s.kumar has started a petition.23 signatures so far.
+  - Plant repotting: April 8, Floors 2-3.Expect mess. a.patel and s.kumar assigned. The ficus in the lobby is now 4 years old and 2.1m tall.
+  - Conference Room A: New whiteboard
+    installed. Old one had 14 months of
+    marker that no one would remove.
+  - Lobby kiosk: Now displays birthday
+    calendar. Happy April, s.kumar.
+  - Elevator maintenance: Friday 8-10 AM.
+    Use stairs. Yes, even if you're on
+    Floor 3. Yes, even if it's raining.
+  - Air conditioning: Floor 2 is too cold,
+    Floor 3 is too hot. Facilities says
+    "it's balanced." It is not balanced.
+  - New recycling bins in all breakrooms.
+    Paper, plastic, and "everything else"
+    (which is just a second trash can
+    with a nicer label).
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+IT / SECURITY REMINDER
+───────────────────────────────
+
+  - Q3 security audit scope is being
+    defined. All privileged accounts in
+    scope. If your access isn't documented,
+    it gets revoked. — A. Fischer
+  - VPN certificate renewal: If you get
+    "auth failed" after April 1, submit a
+    ticket. Don't email helpdesk directly.
+  - Password policy v4.2.1 is now in
+    effect. Read it. Seriously.
+  - New screen lock policy: 5-minute
+    timeout. Your screen will lock if you
+    go to get coffee. Bring your PIN.
+  - USB drive policy: Still banned.
+    Yes, even for the birthday cake
+    playlist. No, even for "just this
+    once." No.
+  - Monitor brightness: If you can see
+    your face in the screen, turn it down.
+    — Facilities (again)
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+VENDOR / PROCUREMENT
+───────────────────────────────
+
+  - PagerDuty contract renews April 30.
+    Tom is handling renewal.
+  - New monitor batch arriving May 2.
+    Engineering first, then Finance.
+    27" 4K. You're welcome.
+  - Office supplies Q2 order placed.
+    Paper clips. Again.
+  - Janitorial contract renewed. Same
+    company. Same schedule. The bathroom
+    on Floor 3 will still smell like
+    "ocean breeze" at 9 AM.
+  - Catering for Q2 offsite: Survey open
+    until April 10. Options: Indian,
+    Continental, or "surprise us" (which
+    last time was cold pizza).
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+HR / PEOPLE
+───────────────────────────────
+
+  - Spring onboarding cohort: 3 interns
+    started Feb 18. April cohort (4 more)
+    begins April 1. Welcome them at the
+    front desk.
+  - Annual review submissions due April 5.
+    Managers: Don't wait until April 4 at
+    5:58 PM. We've all been there.
+  - New parent leave policy: 26 weeks
+    (up from 20). Effective April 1.
+  - Employee referral bonus: $500.
+    Know someone great? Send their CV to
+    hr@stillbrook.internal.
+  - Birthday budget Q2: $450 total.
+    14 birthdays in April. That's $32
+    each. The cake is getting smaller.
+  - "Return to office" policy: Hybrid.
+    3 days in, 2 remote. Tuesday and
+    Thursday are anchor days.
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+CAFETERIA
+───────────────────────────────
+
+  - New menu starts April 7. Thai Tuesday
+    is back (by popular demand).
+  - Vegan option every Thursday. The
+    chickpea curry gets 4/5 stars.
+  - Coffee: See Facilities. It's broken.
+  - Juice: Orange and apple. That's it.
+    That's been "it" since 2023.
+  - Fridge: Please stop putting hot food
+    in the fridge. The yogurt is not
+    your friend.
+  - Microwave: There is one. It is in
+    the corner. It is always in use.
+    Be patient.
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+LOST & FOUND / MISC
+───────────────────────────────
+
+  - Found: 1 laptop charger (Floor 2,
+    near the whiteboard). Claim at desk.
+  - Found: 3 umbrellas (lobby). One is
+    pink. One is black. One is "mystery."
+  - Found: 1 scarf (grey, wool). If this
+    is yours, you left it in Conference
+    Room B in January. It's still there.
+  - Found: 1 pair of reading glasses
+    (cafeteria table 4). You're welcome.
+  - Lost: My stapler. If you've seen it,
+    it's the red one. The one I've had
+    since 2019. It's sentimental.
+  - The cat that keeps visiting the
+    loading dock is NOT ours. Please do
+    not feed it. (We know. We do too.)
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+SUBMIT A TIP
+───────────────────────────────
+
+  Want something in the next issue?
+  Email l.bennett@stillbrook.internal
+  with subject "NEWS TIP."
+
+  Deadlines: 2 weeks before publish date.
+  No confidential info. No complaints
+  about the coffee machine (we know).
+  No passive-aggressive notes about
+  parking. (We also know.)
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════  

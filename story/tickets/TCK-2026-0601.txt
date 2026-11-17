@@ -1,0 +1,13 @@
+Ticket: TCK-2026-0601
+Priority: Low
+Status: Resolved
+Opened: 2026-03-24
+By: l.tanaka@stillbrook.internal
+Assigned: helpdesk02
+
+Subject: Office plant repotting — Floor 2
+
+Description: Scheduling plant repotting
+for April 8. Need 2 hours, 3 people.
+Resolution: Scheduled. a.patel and
+s.kumar assigned.   

@@ -1,0 +1,15 @@
+Ticket: TCK-2026-0401
+Priority: Medium
+Status: Resolved
+Opened: 2026-02-25
+By: c.lindgren@stillbrook.internal
+Assigned: j.castillo (IT Admin)
+
+Subject: sa_finance_export token
+validation
+
+Description: Token may have expired
+early due to storage migration. Requesting
+validation and rotation if needed.
+Resolution: Token valid until April 28.
+No rotation needed.   

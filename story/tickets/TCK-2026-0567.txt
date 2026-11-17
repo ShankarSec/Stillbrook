@@ -1,0 +1,13 @@
+Ticket: TCK-2026-0567
+Priority: Low
+Status: Resolved
+Opened: 2026-03-20
+By: s.kumar@stillbrook.internal
+Assigned: helpdesk03
+
+Subject: Parking spot dispute — Floor 3
+
+Description: Spot P-304 occupied by
+vehicle not assigned to that spot.
+Resolution: Moved. Reminder sent to
+facilities.   

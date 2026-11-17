@@ -1,0 +1,15 @@
+#!/bin/sh
+# =====================================================================
+# Stillbrook -- faked /proc/version
+#
+# /proc/version is read only inside the container, so the lab instead
+# publishes the kernel string the vault host claims to run through this
+# wrapper.  /etc/rc.local writes /var/run/proc-version at boot.
+# =====================================================================
+FAKE=/var/run/proc-version
+
+if [ -r "${FAKE}" ]; then
+    cat "${FAKE}"
+else
+    cat /proc/version
+fi

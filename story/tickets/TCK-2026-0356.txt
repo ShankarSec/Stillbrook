@@ -1,0 +1,15 @@
+Ticket: TCK-2026-0356
+Priority: High
+Status: Resolved
+Opened: 2026-02-20
+By: n.gupta@stillbrook.internal
+Assigned: d.nguyen (Operations)
+
+Subject: Phoenix_DR — failover test
+scheduling
+
+Description: Requesting failover test
+window for Q1. Need 30 min maintenance
+window.
+Resolution: Scheduled 2026-03-05 02:00
+UTC. Test passed. RTO: 4 min.   

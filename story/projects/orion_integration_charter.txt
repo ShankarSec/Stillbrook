@@ -1,0 +1,40 @@
+PROJECT CHARTER — Orion Integration
+ID: SB-PRJ-2026-004
+Status: Active
+Sponsor: S. Chen
+Start: 2026-01-20
+Target Completion: 2026-08-30
+Classification: Internal
+
+═══════════════════════════════════════════════════
+SCOPE
+═══════════════════════════════════════════════════
+
+Third-party API integration and build
+pipeline for the Orion platform.
+
+═══════════════════════════════════════════════════
+PROJECT IDENTIFIER
+═══════════════════════════════════════════════════
+
+Official name: Orion Integration
+System identifier: Orion_Integration
+Short code (internal chat only): ORN-INT
+
+═══════════════════════════════════════════════════
+TEAM
+═══════════════════════════════════════════════════
+
+  S. Chen       — Senior Developer (Sponsor)
+  V. Das        — Integration Engineer
+  L. Tanaka     — Build & Release
+
+═══════════════════════════════════════════════════
+MILESTONES
+═══════════════════════════════════════════════════
+
+  M1: API spec complete              — 2026-04-30
+  M2: Integration testing            — 2026-06-15
+  M3: Production release             — 2026-08-30
+
+═══════════════════════════════════════════════════   

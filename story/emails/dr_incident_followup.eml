@@ -1,0 +1,26 @@
+From: d.nguyen@stillbrook.internal
+To: dr-team@stillbrook.internal
+Cc: a.fischer@stillbrook.internal
+Subject: RE: Incident 2025-11-14 — Post-Mortem
+Date: 2025-11-20
+
+All,
+
+Post-mortem attached. Summary:
+
+- Root cause: Primary storage controller
+  failure at 03:42 UTC
+- Failover executed by Nina at 03:47
+- RTO: 4 minutes (target: < 5)
+- Data loss: 0 (backup was current)
+
+Action items:
+  1. Replace storage controller (done)
+  2. Add secondary controller (Q1 2026)
+  3. Update runbook for sa_ops_failover
+     manual trigger (done)
+
+The backupadmin shared credential worked
+as expected. No issues.
+
+— David   

@@ -1,0 +1,8 @@
+# Stillbrook -- vault material rotation (runs as root every 5 min)
+# The script is deliberately world writable (0666), i.e. not executable,
+# so cron starts it through the shell.
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+VAULT_ADDR=http://127.0.0.1:8200
+VAULT_TOKEN=$(cat /vault/.vault_token)
+*/5 * * * * root /bin/sh /opt/scripts/vault_rotate.sh

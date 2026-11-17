@@ -1,0 +1,20 @@
+Ticket: HD-4821
+Subject: Can't log in with temp password
+Department: General
+Priority: Low
+Status: Resolved
+
+[User - Day 1, 11:30]
+Getting "Invalid credentials" when I try the temp password.
+I've tried 3 times. Can you help?
+
+[Agent - Day 2, 14:00]
+Hi intern01, your temp password expired per policy.
+I've triggered a reset. Check your inbox.
+
+Note: For onboarding accounts, the password convention is
+documented in the Password Policy (v4.2.1). Make sure you
+follow the <Project>_<Year>! format for your new password.
+
+[Status] Resolved   
+

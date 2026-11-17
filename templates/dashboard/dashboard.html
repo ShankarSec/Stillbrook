@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<p>Welcome, <strong>{{ username }}</strong>.</p>
+<p class="muted">Role: {{ role }} &middot; Department: {{ department }}{% if project %} &middot; Project: {{ project }}{% endif %}</p>
+
+{% if flag %}
+<div style="background:#e8f5e9;border:1px solid #a5d6a7;padding:10px;border-radius:4px;margin:12px 0;">
+  <strong>Flag:</strong> {{ flag }}
+</div>
+{% endif %}
+
+{% if widgets %}
+<h4>Department Discovery</h4>
+<ul>
+  {% for w in widgets %}
+  <li><a href="{{ url_for('story.index') }}">{{ w.label }}</a> <span class="muted">({{ w.file_count }} item{{ 's' if w.file_count != 1 else '' }})</span></li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+<h4>Recent activity</h4>
+{% if activity %}
+<ul class="muted">
+  {% for event in activity %}
+  <li>{{ event.event_type }} &mdash; {{ event.result }} &mdash; {{ event.ip }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">No recent activity.</p>
+{% endif %}
+
+<p><a href="{{ url_for('story.index') }}">Browse internal resources</a></p>
+
+<form method="post" action="{{ url_for('auth.logout') }}">
+  <button type="submit">Log out</button>
+</form>
+{% endblock %}

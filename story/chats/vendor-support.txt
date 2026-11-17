@@ -1,0 +1,20 @@
+#vendor-support | 2026-03-23 09:45
+
+@pagerduty_support: Hello, following up
+  on your ticket #PD-8821. The alert
+  threshold change should be live.
+
+@t.muller: Confirmed. The false positive
+  from the finance export delay is
+  resolved. Threshold is now 10 min
+  instead of 5.
+
+@pagerduty_support: Great. Your contract
+  renews April 30. We'll send the
+  renewal notice next week.
+
+@t.muller: Tom Muller is the technical
+  contact. Budget code ORN-BUD-OPS.
+
+@pagerduty_support: Noted. Have a good
+  day!   

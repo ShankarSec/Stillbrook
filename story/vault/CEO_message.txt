@@ -1,0 +1,28 @@
+From: E. Whitfield (CTO)
+To: Executive Team
+Date: 2026-03-28
+Classification: RESTRICTED
+
+Team,
+
+Q1 is done. BlackEcho staging is complete,
+Phoenix_DR RTO is under 5 minutes, and
+Orion Budget is on track for the May lock.
+
+Two things before Q2:
+
+1. The Q3 security audit is coming. A. Fischer
+   has the scope. If your access isn't
+   documented, it gets revoked. No exceptions.
+
+2. The backupadmin shared credential situation
+   is a known risk. I'm not comfortable with
+   the Q4 timeline. I want that resolved by
+   end of Q2. David, Maria, Juan — coordinate
+   with IT Security.
+
+If something goes wrong, the recovery portal
+in Vault 2 is your last resort. I hope
+we never need it.
+
+— Ewan   

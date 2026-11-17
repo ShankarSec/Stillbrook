@@ -1,0 +1,86 @@
+Stillbrook IT — Employee Roster (Q1 2026)
+Classification: Internal
+Last Updated: 2026-03-15
+Source: HR Portal / Workday Export
+
+═══════════════════════════════════════════════════
+EXECUTIVE
+═══════════════════════════════════════════════════
+
+  e.whitfield   — Chief Technology Officer
+  d.okafor      — VP, Engineering
+  s.lindqvist   — VP, Finance
+  r.marchetti   — VP, Operations
+  a.fischer     — CISO
+
+═══════════════════════════════════════════════════
+ENGINEERING
+═══════════════════════════════════════════════════
+
+  d.nguyen      — Senior Migration Engineer
+  a.kowalski    — Migration Lead
+  s.chen        — Senior Developer
+  v.das         — Integration Engineer
+  l.tanaka      — Build & Release Engineer
+  p.okafor      — CI/CD Pipeline Engineer
+  k.muller      — QA Contractor
+  r.okafor      — Security Contractor
+  d.kowalski    — (terminated 2026-02-01)
+
+═══════════════════════════════════════════════════
+OPERATIONS
+═══════════════════════════════════════════════════
+
+  d.nguyen      — DR Coordinator
+  m.rivera      — DR Operations Support
+  n.gupta       — Failover Specialist
+  t.muller      — Monitoring & Alerting
+  t.gupta       — Monitoring Contractor
+  n.lindgren    — Compliance Contractor
+  h.gupta       — (terminated 2026-03-01)
+
+═══════════════════════════════════════════════════
+FINANCE
+═══════════════════════════════════════════════════
+
+  j.castillo    — Budget & Reporting Analyst
+  r.sharma      — Financial Reporting
+  l.tanaka      — Audit & Compliance
+  c.lindgren    — Data Export & Reporting Lead
+  t.muller      — Procurement
+  j.patel       — Accounts Payable
+  v.patel       — Reconciliation
+  c.das         — Tax Filing Contractor
+
+═══════════════════════════════════════════════════
+GENERAL / ADMIN
+═══════════════════════════════════════════════════
+
+  m.rivera      — Onboarding & HR Coordinator
+  r.sharma      — Office Administration Lead
+  p.okafor      — Intern Programme Coordinator
+  l.tanaka      — Facilities & Logistics
+  t.muller      — Front Desk & Reception
+  a.patel       — Admin Assistant
+  s.kumar       — Facilities
+  l.bennett     — Events Coordinator
+  p.chen        — Translation Contractor
+  intern01      — Intern (Spring 2026)
+  intern02      — Intern (Spring 2026)
+  intern03      — Intern (Spring 2026)
+  helpdesk01    — L1 Support
+  helpdesk02    — L1 Support
+  helpdesk03    — L1 Support
+  helpdesk04    — L1 Support (on leave)
+
+═══════════════════════════════════════════════════
+IT ADMIN
+═══════════════════════════════════════════════════
+
+  d.nguyen      — Privileged Access Team
+  m.rivera      — Infrastructure Backup
+  j.castillo    — Access Management
+  s.tanaka      — Access Review Contractor
+  backupadmin   — Shared Admin (see policy §4)
+
+═══════════════════════════════════════════════════   

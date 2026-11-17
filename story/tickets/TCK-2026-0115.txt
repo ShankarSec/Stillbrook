@@ -1,0 +1,14 @@
+Ticket: TCK-2026-0115
+Priority: Medium
+Status: Resolved
+Opened: 2026-01-14
+By: r.sharma@stillbrook.internal
+Assigned: IT Admin
+
+Subject: Password reset — Finance account
+
+Description: Locked account after 5
+failed attempts. Used wrong project
+name (Orion_Budget instead of OrionBudget).
+Resolution: Reset. User retrained on
+correct identifier.   

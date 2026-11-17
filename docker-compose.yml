@@ -1,0 +1,224 @@
+# Pin the project name so generated container names are stable regardless
+# of the directory the repository is cloned into. Reset and vault-init
+# scripts rely on the "stillbrook-*" names.
+name: stillbrook
+
+networks:
+  lab:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.29.0.0/16
+  internal:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
+
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:80:80"
+      - "127.0.0.1:443:443"
+      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:9090:9090"
+    environment:
+      - STILLBROOK_TIER=medium
+      - REDIS_URL=redis://redis:6379
+      - DB_URL=postgresql://postgres:stillbrook_prod_2026@postgres:5432/stillbrook
+      - GITEA_URL=http://gitea:3000
+    networks:
+      - lab
+      - internal
+    depends_on:
+      redis:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      gitea:
+        condition: service_healthy
+
+  redis:
+    image: redis:7-alpine
+    networks:
+      - internal
+    volumes:
+      - ./docker/redis/seed_data.sh:/seed.sh:ro
+    entrypoint: ["sh", "-c", "redis-server --appendonly yes --daemonize yes && sleep 2 && sh /seed.sh && tail -f /dev/null"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 2s
+      retries: 5
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: stillbrook_prod_2026
+      POSTGRES_DB: stillbrook
+    networks:
+      - internal
+    volumes:
+      - ./docker/db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 3s
+      timeout: 2s
+      retries: 10
+
+  gitea:
+    image: gitea/gitea:1.21-rootless
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+      - GITEA__server__ROOT_URL=http://gitea:3000
+      - GITEA__database__DB_TYPE=sqlite3
+      - GITEA__security__INSTALL_LOCK=true
+      - GITEA__security__SECRET_KEY=stillbrook_lab_secret_2026
+      - GITEA__service__DISABLE_REGISTRATION=true
+    networks:
+      - internal
+    volumes:
+      - gitea_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/healthz"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 30s
+
+  ssh-jumpbox:
+    build:
+      context: ./docker/ssh
+      args:
+        MRIVERA_PASS: ${MRIVERA_PASS}
+        BACKUPADMIN_PASS: ${BACKUPADMIN_PASS}
+    ports:
+      - "127.0.0.1:2222:2222"
+    networks:
+      - lab
+      - internal
+    volumes:
+      # Shared with vsftpd so the backdoor shell (nobody) can read
+      # m.rivera's history, including unseal key 3.
+      - jumpbox_home:/home/m.rivera
+
+  internal-router:
+    # Stage 9: the hop between the lab network and the vault host.
+    # It only lives on the internal network, so the host cannot reach
+    # it (172.28.0.10 is not routable from outside the lab).
+    build: ./docker/router
+    container_name: stillbrook-internal-router
+    hostname: internal-router
+    networks:
+      internal:
+        ipv4_address: 172.28.0.10
+    volumes:
+      - vault_shared:/shared
+    mem_limit: 256m
+    cpus: 0.5
+    restart: unless-stopped
+
+  vault-host:
+    # Stage 9: the vault dev server plus the SSH service in front of
+    # it. Key authentication only, reachable exclusively through the
+    # internal router.
+    build: ./docker/vaulthost
+    container_name: stillbrook-vault-host
+    hostname: vault-host
+    # Needed so the entrypoint can set the immutable bit on /etc/shadow
+    # (privesc vector B). No ports are published.
+    cap_add:
+      - LINUX_IMMUTABLE
+    environment:
+      VAULT_DEV_LISTEN_ADDRESS: "0.0.0.0:8200"
+      VAULT_ADDR: "http://127.0.0.1:8200"
+    networks:
+      internal:
+        ipv4_address: 172.28.0.20
+    volumes:
+      - vault_shared:/shared
+    mem_limit: 512m
+    cpus: 1.0
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "vault", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+
+  vsftpd:
+    # Stage 9: the backdoored FTP server. It sits on the lab network
+    # so the player can reach it from the host (port 21).
+    build: ./docker/vsftpd
+    container_name: stillbrook-vsftpd
+    ports:
+      - "127.0.0.1:21:21"
+    networks:
+      - lab
+    volumes:
+      # The jumpbox home directory, including .bash_history with key 3.
+      - jumpbox_home:/shared
+    restart: unless-stopped
+
+  samba:
+    # Local rebuild of the retired bitnami/samba:4.19 contract.
+    build: ./docker/samba
+    image: stillbrook/samba:4.19
+    container_name: stillbrook-samba
+    networks:
+      - internal
+    volumes:
+      - ./docker/samba/share:/volume/samba/executive
+    environment:
+      SAMBA_SHARED_USER: admin
+      SAMBA_SHARED_PASSWORD: admin123
+      SAMBA_SHARE_NAME: executive
+    restart: unless-stopped
+
+  vault-init:
+    # One-shot: scatters the unseal keys, runs the seal/unseal ceremony and
+    # stores the final flag. Exits when it is done (restart: "no").
+    build: ./docker/vault/init
+    image: stillbrook/vault-init:1.0
+    container_name: stillbrook-vault-init
+    networks:
+      - internal
+    depends_on:
+      vault-host:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      samba:
+        condition: service_started
+      ssh-jumpbox:
+        condition: service_started
+    environment:
+      VAULT_ADDR: "http://vault-host:8200"
+      VAULT_CONTAINER: "stillbrook-vault-host"
+      JUMPBOX_CONTAINER: "stillbrook-ssh-jumpbox-1"
+      SAMBA_SHARE_NAME: "executive"
+      PSQL_HOST: "postgres"
+      PSQL_DB: "stillbrook"
+      PSQL_USER: "postgres"
+      PGPASSWORD: "stillbrook_prod_2026"
+    volumes:
+      - ./docker/vault/init:/vault-init
+      - ./docker/samba/share:/volume/samba/executive
+      - ./story/vault/final_flag.txt:/vault-flag/final_flag.txt:ro
+      # needed for `docker logs stillbrook-vault-host` and
+      # `docker exec stillbrook-ssh-jumpbox-1 ...`
+      - /var/run/docker.sock:/var/run/docker.sock
+    entrypoint: ["/bin/sh", "/vault-init/vault-init.sh"]
+    restart: "no"
+
+volumes:
+  pgdata:
+  gitea_data:
+  jumpbox_home:
+  vault_shared:

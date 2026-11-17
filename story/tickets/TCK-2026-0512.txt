@@ -1,0 +1,16 @@
+Ticket: TCK-2026-0512
+Priority: Medium
+Status: Open
+Opened: 2026-03-14
+By: m.rivera@stillbrook.internal
+Assigned: IT Admin
+
+Subject: backupadmin credentials rotation
+
+Description: Policy v4.2.1 requires 90-day
+rotation. backupadmin not rotated since
+Jan 10 (day 94). Q4 review pending.
+Also: confirming whether m.rivera's IT
+Admin account and Operations account use
+same project identifier.
+Status: Awaiting CISO response.   

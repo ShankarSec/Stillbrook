@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{ report.title }}</h2>
+<p class="muted">Owner: {{ report.owner }} | Created: {{ report.created }}</p>
+<hr>
+<pre>{{ report.content }}</pre>
+<a href="/api/v2/fin/exports/{{ report.id }}/export">Download CSV</a>
+{% endblock %}

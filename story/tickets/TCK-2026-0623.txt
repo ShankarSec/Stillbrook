@@ -1,0 +1,18 @@
+Ticket: TCK-2026-0623
+Priority: Medium
+Status: Open
+Opened: 2026-03-26
+By: a.fischer@stillbrook.internal
+Assigned: IT Admin
+
+Subject: Q3 Security Audit — scope
+definition
+
+Description: Defining scope for Q3
+security audit. All privileged accounts,
+service accounts, and shared credentials
+in scope. backupadmin shared credential
+policy (Q4 review) is a known finding.
+Need all account-to-project mappings
+documented by July 1.
+Status: In progress.   
