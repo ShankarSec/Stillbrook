@@ -642,7 +642,35 @@ If you do not need to preserve the current state, use the full reset script. Rem
 
 ## License and disclaimer
 
-Stillbrook is intended for educational and security-training purposes. No permission is granted to test systems outside the lab. Users are responsible for operating the environment safely and obtaining explicit authorisation for any external security assessment.
+## License
+
+Copyright 2026 Shankar M
+
+Stillbrook's original project code, documentation and original materials are licensed under the **Apache License, Version 2.0**.
+
+You may use, modify and distribute this work under the terms and conditions of the Apache License 2.0.
+
+A copy of the license is available in the [`LICENSE`](LICENSE) file.
+
+You can also read the license here:
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+**Third-party components:** Stillbrook includes or uses third-party software and dependencies. Those components remain subject to their respective copyright notices and license terms. The Apache License applied to Stillbrook does not replace or override third-party licenses.
+
+## Disclaimer and responsible use
+
+Stillbrook is an intentionally vulnerable cybersecurity training environment designed exclusively for educational purposes and authorised security testing.
+
+- Use the environment only on systems and networks you own or have explicit permission to test.
+- Keep the lab isolated and do not expose vulnerable services to the public internet.
+- Do not reuse synthetic challenge credentials outside the lab.
+- Review Docker, firewall and reset scripts before execution.
+- Users are responsible for their deployment, configuration and use of the environment.
+
+Stillbrook is provided on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, as described in the Apache License 2.0.
+
+The author is not responsible for misuse, unauthorised activity, damage or data loss resulting from deployment or use of this training environment.
 
 ---
 
