@@ -1,5 +1,5 @@
 {
-  "svc_router:Phoenix_DR#2026": [
+  "svc_router:CHANGE_ME": [
     "^vault-host:2224$",
     "^172\\.28\\.0\\.20:2224$",
     "^R:vault-host:2224$",

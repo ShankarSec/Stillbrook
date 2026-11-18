@@ -1,41 +1,41 @@
 users:
   - username: intern01
-    password: "SpringOnboarding_2026!"
+    password: "NAMEme"
     role: employee
     department: general
     project: Spring Onboarding
     attack_value: Initial Access
 
   - username: j.castillo
-    password: "OrionBudget#2026"
+    password: "NAMEme"
     role: finance_manager
     department: finance
     project: Orion Budget
     attack_value: Finance Data Access
 
   - username: m.rivera
-    password: "BlackEcho_Migration!"
+    password: "NAMEme"
     role: engineer
     department: engineering
     project: BlackEcho Migration
     attack_value: Lateral Movement
 
   - username: d.nguyen
-    password: "Phoenix_DR#2026"
+    password: "NAMEme"
     role: operations_lead
     department: operations
     project: Phoenix DR
     attack_value: DR Environment Access
 
   - username: sa_finance_sync
-    password: "OrionSyncService@2026"
+    password: "NAmeme"
     role: service_account
     department: finance
     project: Orion Sync
     attack_value: Service Account Pivot
 
   - username: backupadmin
-    password: "Phoenix_DR#2026"
+    password: "NAMEme"
     role: dr_admin
     department: it
     project: Phoenix DR
