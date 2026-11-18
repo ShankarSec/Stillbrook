@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 
 # Prefer the value from .env (docker compose does not export it into this
 # host-side script). Fall back to the documented example value.
-GITEA_PASS="${GITEA_PASS:-Rivera#2026}"
+GITEA_PASS="${GITEA_PASS:-CHANGE_ME}"
 ENC_PASS=$(python3 -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1], safe=""))' "$GITEA_PASS")
 
 echo "Waiting for Gitea..."
